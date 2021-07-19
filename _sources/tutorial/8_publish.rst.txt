@@ -135,7 +135,7 @@ they meet both the |guidance_link| and the |MustHaves|.
 
 .. |Register_link| raw:: html
 
-   <a href="https://appdev.kbase.us/#appcatalog/register" target="_blank">Module Registration</a>
+   <a href="https://appdev.kbase.us/#catalog/register" target="_blank">Module Registration</a>
 
 .. |appdevBrowse_link| raw:: html
 
