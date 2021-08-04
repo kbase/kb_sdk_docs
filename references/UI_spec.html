@@ -295,24 +295,31 @@ textual/numeric/boolean value</p>
 <dt class="field-odd">default_values</dt>
 <dd class="field-odd"><p>if set to any non-empty string, this field will be preset with the string</p>
 </dd>
-<dt class="field-even">field_type</dt>
-<dd class="field-even"><p>type of the parameter; could be one of <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">dropdown</span></code>, <code class="docutils literal notranslate"><span class="pre">checkbox</span></code>,
+<dt class="field-even">valid_file_types</dt>
+<dd class="field-even"><p>a list of staging area file types that are valid for the method
+parameter. This might apply to a text box, dropdown, dynamic dropdown, etc.
+depending on the context. The file type is available in the fileinfo key of
+the json response from staging service importer mappings endpoint. Each mapping
+has a file_type_ext key containing the type.</p>
+</dd>
+<dt class="field-odd">field_type</dt>
+<dd class="field-odd"><p>type of the parameter; could be one of <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">dropdown</span></code>, <code class="docutils literal notranslate"><span class="pre">checkbox</span></code>,
 <code class="docutils literal notranslate"><span class="pre">textarea</span></code>, <code class="docutils literal notranslate"><span class="pre">textsubdata</span></code>, or <code class="docutils literal notranslate"><span class="pre">dynamic_dropdown</span></code></p>
 </dd>
-<dt class="field-odd">text_options</dt>
-<dd class="field-odd"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">text</span></code> type</p>
+<dt class="field-even">text_options</dt>
+<dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">text</span></code> type</p>
 </dd>
-<dt class="field-even">dropdown_options</dt>
-<dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">dropdown</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/spec.json" target="_blank">Example</a></p>
+<dt class="field-odd">dropdown_options</dt>
+<dd class="field-odd"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">dropdown</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-odd">checkbox_options</dt>
-<dd class="field-odd"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">checkbox</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/simulate_growth_on_phenotype_data/spec.json" target="_blank">Example</a></p>
+<dt class="field-even">checkbox_options</dt>
+<dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">checkbox</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/simulate_growth_on_phenotype_data/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-even">textarea_options</dt>
-<dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">textarea</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_multiple_metabolic_models/spec.json" target="_blank">Example</a></p>
+<dt class="field-odd">textarea_options</dt>
+<dd class="field-odd"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">textarea</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_multiple_metabolic_models/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-odd">textsubdata_options</dt>
-<dd class="field-odd"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">textsubdata</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/compare_flux_with_expression/spec.json" target="_blank">Example</a></p>
+<dt class="field-even">textsubdata_options</dt>
+<dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">textsubdata</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/compare_flux_with_expression/spec.json" target="_blank">Example</a></p>
 </dd>
 </dl>
 </div>

@@ -46,6 +46,11 @@ Each item in the ``parameters`` array defines one parameter shown in the UI inpu
                  for this parameter, treating these values as a list rather than a single
                  textual/numeric/boolean value
 :default_values: if set to any non-empty string, this field will be preset with the string
+:valid_file_types: a list of staging area file types that are valid for the method
+                   parameter. This might apply to a text box, dropdown, dynamic dropdown, etc.
+                   depending on the context. The file type is available in the fileinfo key of
+                   the json response from staging service importer mappings endpoint. Each mapping
+                   has a file_type_ext key containing the type.
 :field_type: type of the parameter; could be one of ``text``, ``dropdown``, ``checkbox``,
              ``textarea``, ``textsubdata``, or ``dynamic_dropdown``
 :text_options: optional block defining details of the ``text`` type
