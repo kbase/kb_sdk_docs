@@ -173,9 +173,7 @@ Error Messages
 
 *Solution*: Try changing the user flag in ``run_tests.sh``, ``run_bash.sh``, and ``run_subjobs.sh`` (if available) in the ``test_local`` directory to ``--user 0``. Alternatively, remove that flag altogether.
 
-*Error*: ``Can't find image [test/<your_module_name>:latest].`` 
-``Here is 'docker images' output: Cannot connect to the Docker daemon.``
-``Is the docker daemon running on this host?``
+*Error*: ``Can't find image [test/<your_module_name>:latest]. Here is 'docker images' output: Cannot connect to the Docker daemon. Is the docker daemon running on this host?``
 
 *Solution*: Run the following code snippet `docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock`
 

@@ -48,9 +48,9 @@ Each item in the ``parameters`` array defines one parameter shown in the UI inpu
 :default_values: if set to any non-empty string, this field will be preset with the string
 :valid_file_types: a list of staging area file types that are valid for the method
                    parameter. This might apply to a text box, dropdown, dynamic dropdown, etc.
-                   depending on the context. The file type is available in the fileinfo key of
+                   depending on the context. The file type is available in the ``fileinfo`` key of
                    the json response from staging service importer mappings endpoint. Each mapping
-                   has a file_type_ext key containing the type.
+                   has a ``file_type_ext`` key containing the type.
 :field_type: type of the parameter; could be one of ``text``, ``dropdown``, ``checkbox``,
              ``textarea``, ``textsubdata``, or ``dynamic_dropdown``
 :text_options: optional block defining details of the ``text`` type
@@ -221,6 +221,12 @@ similar to the selection of other WS data objects.
 
 :selection_id: The value of this key will be extracted from the item selected by the
                user. The item is expected to be represented as a map.
+
+:exact_match_on: if exactly matching the user's input to the results from the dynamic
+                 service is required, this field contains the name of the key in
+                 the results document that contains the value to which the user's
+                 input should be matched. May or may not be the same key as
+                 ``selection_id``.
 
 :description_template: Defines how the description of items are rendered using Handlebar templates
                        (use the keys in items as variable names).

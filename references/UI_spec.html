@@ -298,9 +298,9 @@ textual/numeric/boolean value</p>
 <dt class="field-even">valid_file_types</dt>
 <dd class="field-even"><p>a list of staging area file types that are valid for the method
 parameter. This might apply to a text box, dropdown, dynamic dropdown, etc.
-depending on the context. The file type is available in the fileinfo key of
+depending on the context. The file type is available in the <code class="docutils literal notranslate"><span class="pre">fileinfo</span></code> key of
 the json response from staging service importer mappings endpoint. Each mapping
-has a file_type_ext key containing the type.</p>
+has a <code class="docutils literal notranslate"><span class="pre">file_type_ext</span></code> key containing the type.</p>
 </dd>
 <dt class="field-odd">field_type</dt>
 <dd class="field-odd"><p>type of the parameter; could be one of <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">dropdown</span></code>, <code class="docutils literal notranslate"><span class="pre">checkbox</span></code>,
@@ -505,25 +505,32 @@ at call time.</p>
 <dd class="field-odd"><p>The value of this key will be extracted from the item selected by the
 user. The item is expected to be represented as a map.</p>
 </dd>
-<dt class="field-even">description_template</dt>
-<dd class="field-even"><p>Defines how the description of items are rendered using Handlebar templates
+<dt class="field-even">exact_match_on</dt>
+<dd class="field-even"><p>if exactly matching the user’s input to the results from the dynamic
+service is required, this field contains the name of the key in
+the results document that contains the value to which the user’s
+input should be matched. May or may not be the same key as
+<code class="docutils literal notranslate"><span class="pre">selection_id</span></code>.</p>
+</dd>
+<dt class="field-odd">description_template</dt>
+<dd class="field-odd"><p>Defines how the description of items are rendered using Handlebar templates
 (use the keys in items as variable names).</p>
 </dd>
-<dt class="field-odd">multiselection</dt>
-<dd class="field-odd"><p>If true, then multiple selections are allowed in a single input field. This will
+<dt class="field-even">multiselection</dt>
+<dd class="field-even"><p>If true, then multiple selections are allowed in a single input field. This will
 override the <code class="docutils literal notranslate"><span class="pre">allow_multiple</span></code> option (which allows user addition) of additional
 fields. If true, then this parameter will return a list. Defaults to false.</p>
 </dd>
-<dt class="field-even">query_on_empty_input</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code>, the default, to send a request to the dynamic service even
+<dt class="field-odd">query_on_empty_input</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">true</span></code>, the default, to send a request to the dynamic service even
 if there is no input.</p>
 </dd>
-<dt class="field-odd">result_array_index</dt>
-<dd class="field-odd"><p>The index of the result array returned from the dynamic service
+<dt class="field-even">result_array_index</dt>
+<dd class="field-even"><p>The index of the result array returned from the dynamic service
 from where the selection items will be extracted. Default 0.</p>
 </dd>
-<dt class="field-even">path_to_selection_items</dt>
-<dd class="field-even"><p>The path into the result data object to the list of
+<dt class="field-odd">path_to_selection_items</dt>
+<dd class="field-odd"><p>The path into the result data object to the list of
 selection items. If missing, the data at the specified result array
 index is used (defaulting to the first returned value in the list).</p>
 </dd>
