@@ -217,7 +217,11 @@ similar to the selection of other WS data objects.
 
 :service_params: The parameters supplied to the dynamic service call as JSON. The special text
                  ``"{{dynamic_dropdown_input}}"`` will be replaced by the value from the user input
-                 at call time.
+                 at call time. Additionally, any keywords defined as parameters for the app will be
+                 replaced with the user input value at call time. For instance, if an app has a text
+                 parameter called ``"output_name"`` and and the user has specified the output name
+                 as "hello_test" in the text field, then the service param ``"{{output_name}}"`` will
+                 be dynamically replaced with the value "hello_test".
 
 :selection_id: The value of this key will be extracted from the item selected by the
                user. The item is expected to be represented as a map.
