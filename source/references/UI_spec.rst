@@ -217,11 +217,69 @@ similar to the selection of other WS data objects.
 
 :service_params: The parameters supplied to the dynamic service call as JSON. The special text
                  ``"{{dynamic_dropdown_input}}"`` will be replaced by the value from the user input
-                 at call time. Additionally, any keywords defined as parameters for the app will be
+                 at call time.
+
+                 Additionally, any keywords defined as parameters for the app will be
                  replaced with the user input value at call time. For instance, if an app has a text
-                 parameter called ``"output_name"`` and and the user has specified the output name
+                 parameter with an id ``"output_name"`` and and the user has specified the output name
                  as "hello_test" in the text field, then the service param ``"{{output_name}}"`` will
                  be dynamically replaced with the value "hello_test".
+
+                 Any template which does not match a parameter id will leave the dynamic dropdown
+                 options object unaltered, so make sure the right argument id is used or it may
+                 potentially send a malformed object to your service. If your argument is not
+                 recognized, an error will appear in the developer console.
+
+As an example, consider a dropdown needs to send search text to a dynamic service. The
+service can filter results based on whether an argument is passed as ``foo`` or ``bar``.
+Your app already contains a static dropdown that maps to an id of ``foo_or_bar``,
+so it's convenient to pass this argument to the service that populates your
+dynamic dropdown. Below is an example of how this works.
+
+.. code-block:: json
+
+    "parameters": [
+        {
+            "id": "foo_or_bar",
+            "field_type": "dropdown",
+            "dropdown_options": {
+                "options": [
+                    {
+                        "value": "foo",
+                        "display": "Foo"
+                    },
+                    {
+                        "value": "bar",
+                        "display": "Bar"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dynamic_search_example",
+            "field_type": "dynamic_dropdown",
+            "dynamic_dropdown_options": {
+                "data_source": "custom",
+                "service_function": "ExampleService.search_based_on_foo_or_bar",
+                "service_params": [
+                    {
+                        "filter_with": "{{foo_or_bar}}",
+                        "search_text": "{{dynamic_dropdown_input}}"
+                    }
+                ],
+                "selection_id": "result",
+                "description_template": "{{result}}"
+            }
+        }
+    ]
+
+When the user interacts with the dynamic dropdown, ``{{foo_or_bar}}`` will be replaced
+with their selection from the static drop down, and ``{{dynamic_dropdown_input}}`` will be
+replaced with their actual search text. You can use these dynamic variables interchangeably
+or independently. See the |sample_uploader_link| for an example of a spec.json that uses
+an app argument by itself to populate a dynamic dropdown.
+
+
 
 :selection_id: The value of this key will be extracted from the item selected by the
                user. The item is expected to be represented as a map.
@@ -574,5 +632,8 @@ Each field in the ``parameters`` section can have the following properties:
 .. |placeholder_link| raw:: html
 
    <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/display.yaml" target="_blank">Example</a>
+
+.. |sample_uploader_link| raw:: html
+    <a href="https://github.com/kbaseapps/sample_uploader/blob/master/ui/narrative/methods/filter_samplesets/spec.json#L70" target="_blank">Sample Uploader app</a>
 
 
