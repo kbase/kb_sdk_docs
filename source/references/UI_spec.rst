@@ -634,6 +634,7 @@ Each field in the ``parameters`` section can have the following properties:
    <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/display.yaml" target="_blank">Example</a>
 
 .. |sample_uploader_link| raw:: html
+
     <a href="https://github.com/kbaseapps/sample_uploader/blob/master/ui/narrative/methods/filter_samplesets/spec.json#L70" target="_blank">Sample Uploader app</a>
 
 
