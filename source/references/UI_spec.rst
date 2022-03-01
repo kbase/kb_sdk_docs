@@ -635,6 +635,6 @@ Each field in the ``parameters`` section can have the following properties:
 
 .. |sample_uploader_link| raw:: html
 
-    <a href="https://github.com/kbaseapps/sample_uploader/blob/master/ui/narrative/methods/filter_samplesets/spec.json#L70" target="_blank">Sample Uploader app</a>
+    <a href="https://github.com/kbaseapps/sample_uploader/blob/3d954d6cf4a11fd17c4aa9ddeac7e31c3752426a/ui/narrative/methods/filter_samplesets/spec.json#L70" target="_blank">Sample Uploader app</a>
 
 
