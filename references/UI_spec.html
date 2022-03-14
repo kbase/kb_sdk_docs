@@ -482,7 +482,7 @@ dropdown, where the options in the dropdown can be dynamic (usually based on the
 a service call). For instance, you might have a selection of files where the options are from
 the staging_service or from kbase_search. The parameter appears as a text field with a dropdown
 similar to the selection of other WS data objects.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">data_source</dt>
 <dd class="field-odd"><p>One of <code class="docutils literal notranslate"><span class="pre">ftp_staging</span></code>, <code class="docutils literal notranslate"><span class="pre">search</span></code>, or <code class="docutils literal notranslate"><span class="pre">custom</span></code>. Provides sensible defaults for the
 following parameters for a common type of dropdown that can be overwritten.</p>
@@ -500,7 +500,64 @@ service (this needs to be the fully qualified method name, such as
 <dd class="field-even"><p>The parameters supplied to the dynamic service call as JSON. The special text
 <code class="docutils literal notranslate"><span class="pre">&quot;{{dynamic_dropdown_input}}&quot;</span></code> will be replaced by the value from the user input
 at call time.</p>
+<p>Additionally, any keywords defined as parameters for the app will be
+replaced with the user input value at call time. For instance, if an app has a text
+parameter with an id <code class="docutils literal notranslate"><span class="pre">&quot;output_name&quot;</span></code> and and the user has specified the output name
+as “hello_test” in the text field, then the service param <code class="docutils literal notranslate"><span class="pre">&quot;{{output_name}}&quot;</span></code> will
+be dynamically replaced with the value “hello_test”.</p>
+<p>Any template which does not match a parameter id will leave the dynamic dropdown
+options object unaltered, so make sure the right argument id is used or it may
+potentially send a malformed object to your service. If your argument is not
+recognized, an error will appear in the developer console.</p>
 </dd>
+</dl>
+<p>As an example, consider a dropdown needs to send search text to a dynamic service. The
+service can filter results based on whether an argument is passed as <code class="docutils literal notranslate"><span class="pre">foo</span></code> or <code class="docutils literal notranslate"><span class="pre">bar</span></code>.
+Your app already contains a static dropdown that maps to an id of <code class="docutils literal notranslate"><span class="pre">foo_or_bar</span></code>,
+so it’s convenient to pass this argument to the service that populates your
+dynamic dropdown. Below is an example of how this works.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>&quot;parameters&quot;: [
+    {
+        &quot;id&quot;: &quot;foo_or_bar&quot;,
+        &quot;field_type&quot;: &quot;dropdown&quot;,
+        &quot;dropdown_options&quot;: {
+            &quot;options&quot;: [
+                {
+                    &quot;value&quot;: &quot;foo&quot;,
+                    &quot;display&quot;: &quot;Foo&quot;
+                },
+                {
+                    &quot;value&quot;: &quot;bar&quot;,
+                    &quot;display&quot;: &quot;Bar&quot;
+                }
+            ]
+        }
+    },
+    {
+        &quot;id&quot;: &quot;dynamic_search_example&quot;,
+        &quot;field_type&quot;: &quot;dynamic_dropdown&quot;,
+        &quot;dynamic_dropdown_options&quot;: {
+            &quot;data_source&quot;: &quot;custom&quot;,
+            &quot;service_function&quot;: &quot;ExampleService.search_based_on_foo_or_bar&quot;,
+            &quot;service_params&quot;: [
+                {
+                    &quot;filter_with&quot;: &quot;{{foo_or_bar}}&quot;,
+                    &quot;search_text&quot;: &quot;{{dynamic_dropdown_input}}&quot;
+                }
+            ],
+            &quot;selection_id&quot;: &quot;result&quot;,
+            &quot;description_template&quot;: &quot;{{result}}&quot;
+        }
+    }
+]
+</pre></div>
+</div>
+<p>When the user interacts with the dynamic dropdown, <code class="docutils literal notranslate"><span class="pre">{{foo_or_bar}}</span></code> will be replaced
+with their selection from the static drop down, and <code class="docutils literal notranslate"><span class="pre">{{dynamic_dropdown_input}}</span></code> will be
+replaced with their actual search text. You can use these dynamic variables interchangeably
+or independently. See the <a href="https://github.com/kbaseapps/sample_uploader/blob/3d954d6cf4a11fd17c4aa9ddeac7e31c3752426a/ui/narrative/methods/filter_samplesets/spec.json#L70" target="_blank">Sample Uploader app</a> for an example of a spec.json that uses
+an app argument by itself to populate a dynamic dropdown.</p>
+<dl class="field-list simple">
 <dt class="field-odd">selection_id</dt>
 <dd class="field-odd"><p>The value of this key will be extracted from the item selected by the
 user. The item is expected to be represented as a map.</p>
