@@ -222,11 +222,13 @@ similar to the selection of other WS data objects.
 :selection_id: The value of this key will be extracted from the item selected by the
                user. The item is expected to be represented as a map.
 
-:exact_match_on: if exactly matching the user's input to the results from the dynamic
-                 service is required, this field contains the name of the key in
-                 the results document that contains the value to which the user's
-                 input should be matched. May or may not be the same key as
-                 ``selection_id``.
+:exact_match_on: This field has two purposes: 1) If exactly matching the user's input to the
+                 results from the dynamic service is required, this field contains the name of
+                 the key in the results document that contains the value to which the user's
+                 input should be matched. May or may not be the same key as ``selection_id``.
+                 2) Determines what should be returned when the user requests the contents of
+                 the dropdown be moved to the clipboard (e.g. a copy). The value of the key
+                 specified by ``exact_match_on`` in the results document will be returned.
 
 :description_template: Defines how the description of items are rendered using Handlebar templates
                        (use the keys in items as variable names).
