@@ -31,7 +31,7 @@ Criteria:
 
 1. All components of the tool are licensed for unrestricted open source
    use--for example, they cannot be “Free for academic use (but
-   commercial users must pay to use it)”.
+   commercial users must pay to use it)”. The finished app should use an |open_source_license_link|. We recommend the |mit_license_link|.
 2. Documentation for app is clear and includes any appropriate
    references (e.g., published papers on a tool or method) - See  |documentation_link|.
 3. The app includes a public example Narrative demonstrating the app in
@@ -113,4 +113,14 @@ What prompts an app to be deprecated?
 .. |KBaseproduct_link| raw:: html
 
    <a href="https://github.com/kbase/roadmap/blob/master/KBase%20product%20requirements.md" target="_blank">KBase product requirements</a>
+
+
+.. |open_source_license_link| raw:: html
+
+   <a href="https://opensource.org/licenses/alphabetical" target="_blank">open source license</a>
+
+
+.. |mit_license_link| raw:: html
+
+   <a href="https://github.com/kbase/license_template/blob/master/LICENSE.md" target="_blank">MIT License</a>
 
