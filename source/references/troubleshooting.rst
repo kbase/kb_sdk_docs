@@ -177,22 +177,10 @@ Error Messages
 ``Here is 'docker images' output: Cannot connect to the Docker daemon.``
 ``Is the docker daemon running on this host?``
 
-*Solution*: Run the following code snippet `docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock`
+*Solution For MacOSX*: Run the following code snippet 
+``docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock``
 
-*Error*: 
-```
-Congrats- this module is valid.
-
-
-Delete old Docker containers
-Can't find image [test/XXX:latest]. Here is 'docker images' output:
-	Cannot connect to the Docker daemon. Is the docker daemon running on this host?
-
-Build Docker image
-Cannot connect to the Docker daemon. Is the docker daemon running on this host?
-```
-
-*Solution*: `sudo chown $(whoami) /var/run/docker.sock`
+*Solution For Linux*: Run the following code snippet ``sudo chown $(whoami) /var/run/docker.sock``
 
 
 
