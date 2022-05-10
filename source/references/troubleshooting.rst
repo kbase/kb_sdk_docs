@@ -177,7 +177,8 @@ Error Messages
 ``Here is 'docker images' output: Cannot connect to the Docker daemon.``
 ``Is the docker daemon running on this host?``
 
-*Solution For MacOSX*: Run the following code snippet 
+*Solution For MacOS*: Run the following code snippet 
+
 ``docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock``
 
 *Solution For Linux*: Run the following code snippet ``sudo chown $(whoami) /var/run/docker.sock``
