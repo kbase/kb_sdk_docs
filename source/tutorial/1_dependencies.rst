@@ -7,7 +7,10 @@ System Dependencies:
 * Mac OS X 10.8+ (Docker requires this) or Linux.  kb-sdk does not run natively in Windows
 * Xcode (Mac only) |Xcode_link|
 * git |gitscm_link|
-* Docker |docker_link| (for local testing)
+* Docker runtime |docker_link|
+    * Attention: Docker Desktop is banned at ANL and possibly other institutions.
+    * Additional information about Docker Desktop restrictions at ANL: |docker_restrictions_link|
+    * Rancher Desktop |rancherdesktop_link| (alternative to Docker Desktop)
 * At least 20 GB free on your hard drive to install Docker, Xcode, Java JRE, etc.
 * (Not required for Docker-based installation) Java JRE 7 or 8 (9 is currently incompatible) |JAVAjre_link|
 
@@ -48,6 +51,14 @@ When you run an app in a narrative, it runs in a docker container on KBase's ser
 .. |docker_link| raw:: html
 
    <a href="https://www.docker.com" target="_blank">https://www.docker.com</a>
+
+.. |rancherdesktop_link| raw:: html
+
+   <a href="https://docs.rancherdesktop.io/" target="_blank">https://docs.rancherdesktop.io/</a>
+
+.. |docker_restrictions_link| raw:: html
+
+   <a href="https://help.cels.anl.gov/2023/08/16/docker-desktop-is-no-longer-allowed-at-argonne/" target="_blank">https://help.cels.anl.gov/2023/08/16/docker-desktop-is-no-longer-allowed-at-argonne/</a>
 
 .. |virtualbox_link| raw:: html
 
