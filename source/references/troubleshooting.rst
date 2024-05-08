@@ -167,19 +167,35 @@ can increase the amount of memory available to the containers.
 
     Advanced preferences in Docker for OS X.
 
-Error Messages
-^^^^^^^^^^^^^^
-*Error*: ``KeyError: 'getpwuid()' uid not found: '``
+Error Messages and Solutions
+----------------------------
 
-*Solution*: Try changing the user flag in ``run_tests.sh``, ``run_bash.sh``, and ``run_subjobs.sh`` (if available) in the ``test_local`` directory to ``--user 0``. Alternatively, remove that flag altogether.
+Error: "KeyError: 'getpwuid()' uid not found"
+------------------------------------------------------
+This error occurs when host user IDs (UIDs) do not match the container’s UIDs. The user ID is stored in your `~/.kbsdk.cache`.
 
-*Error*: ``Can't find image [test/<your_module_name>:latest].`` 
-``Here is 'docker images' output: Cannot connect to the Docker daemon.``
-``Is the docker daemon running on this host?``
+Solution:
+1. Modify the following scripts in the `test_local` directory:
+   - `run_tests.sh`
+   - `run_bash.sh`
+   - `run_subjobs.sh`
 
-*Solution*: Run the following code snippet `docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock`
+2. Change the user flag to `--user 0` to run as root, which should bypass the UID issues:
+   - For example, change `./run_tests.sh --user $(id -u)` to `./run_tests.sh --user 0`.
 
+3. If the problem persists, consider removing the `--user` flag altogether.
 
+Error: "Can't find image [test/<your_module_name>:latest]"
+"Here is 'docker images' output: Cannot connect to the Docker daemon."
+"Is the docker daemon running on this host?"
+------------------------------------------------------
+This error indicates that Docker is either not running or not reachable, which prevents Docker commands from executing properly.
+
+Solution:
+1. Ensure that the Docker daemon is running on your host.
+2. Modify the permissions of the Docker socket to allow group write access, which should resolve connection issues:
+   - Run: `docker run -it -v /var/run/docker.sock:/var/run/docker.sock alpine chmod g+w /var/run/docker.sock`
+3. Clear your `kb_sdk` cache with the command `rm -rf ~/.kbsdk.cache` and try running your `kb-sdk` command again.
 
 
 
