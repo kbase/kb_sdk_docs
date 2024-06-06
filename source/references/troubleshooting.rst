@@ -177,9 +177,11 @@ Error Messages
 ``Here is 'docker images' output: Cannot connect to the Docker daemon.``
 ``Is the docker daemon running on this host?``
 
-*Solution*: Run the following code snippet `docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock`
+*Solution For MacOS*: Run the following code snippet 
 
+``docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock``
 
+*Solution For Linux*: Ensure that the docker socket has the correct group and read/write permissions for all users for yourself ``$(id -u)`` and the kb-sdk user cached in ``$HOME/.kbsdk.cache``
 
 
 
