@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anatomy of a Module &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="KIDL Specification" href="KIDL_spec.html" />
     <link rel="prev" title="Job Execution" href="execution_engine.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,72 +96,32 @@
 <li class="toctree-l1"><a class="reference internal" href="terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Anatomy of a Module</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Anatomy of a Module</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/references/module_anatomy.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="anatomy-of-a-module">
-<h1>Anatomy of a Module<a class="headerlink" href="#anatomy-of-a-module" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="anatomy-of-a-module">
+<h1>Anatomy of a Module<a class="headerlink" href="#anatomy-of-a-module" title="Link to this heading"></a></h1>
 <p>KBase modules consist of a set of code, configurations, and
 specifications that describe how a set of related apps are shown in the
 Narrative interface and define the implementation of a function that is
@@ -208,8 +129,8 @@ run when the Narrative app is executed. Modules can also include
 components that define visualization widgets, data types, and data
 uploaders/downloaders/converters. This guide provides a brief overview
 of these key components and how they are related.</p>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>To explore the contents of a module yourself, you can use the kb-sdk
 tool to create an example module. (Please see <a href="../tutorial/install.html">these instructions </a>
 on how to install kb-sdk.)</p>
@@ -263,9 +184,9 @@ look something like this:</p>
 </pre></div>
 </div>
 <p>Let’s break this down and examine each component.</p>
-</div>
-<div class="section" id="the-basics">
-<h2>The Basics<a class="headerlink" href="#the-basics" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="the-basics">
+<h2>The Basics<a class="headerlink" href="#the-basics" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 ├── README.md
 ├── LICENSE
@@ -285,9 +206,9 @@ basic information about your module, primarily targeted towards other
 developers or users who want to browse your code. A LICENSE file is also
 required. Your code will not be approved for release on KBase without a
 license that is compatible with KBase’s  <a href="https://github.com/kbase/project_guides/blob/master/LICENSE" target="_blank">open source license</a>.</p>
-</div>
-<div class="section" id="dockerfile">
-<h2>Dockerfile<a class="headerlink" href="#dockerfile" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="dockerfile">
+<h2>Dockerfile<a class="headerlink" href="#dockerfile" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 ├── Dockerfile
 </pre></div>
@@ -304,9 +225,9 @@ install Docker locally and familiarize yourself with Docker tools.</p>
 that can be used to create a Docker image. Instead, in your Dockerfile,
 you will define a set of commands that installs any system or package
 dependencies beyond what is provided in the KBase base image.</p>
-</div>
-<div class="section" id="kbase-interface-description-language-kidl-specification-file">
-<h2>KBase Interface Description Language (KIDL) Specification File<a class="headerlink" href="#kbase-interface-description-language-kidl-specification-file" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="kbase-interface-description-language-kidl-specification-file">
+<h2>KBase Interface Description Language (KIDL) Specification File<a class="headerlink" href="#kbase-interface-description-language-kidl-specification-file" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 ├── MyModule.spec
 </pre></div>
@@ -351,9 +272,9 @@ defined for counting the number of contigs in a contig set. (Note that a
 </div>
 <p>If you initialize an app without the <code class="docutils literal notranslate"><span class="pre">-e</span></code> flag, the KIDL file will contain a default spec that
 accepts any number of parameters and returns a HTML report.</p>
-</div>
-<div class="section" id="files-for-building-and-testing-the-module">
-<h2>Files for building and testing the Module<a class="headerlink" href="#files-for-building-and-testing-the-module" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="files-for-building-and-testing-the-module">
+<h2>Files for building and testing the Module<a class="headerlink" href="#files-for-building-and-testing-the-module" title="Link to this heading"></a></h2>
 <blockquote>
 <div><p>├── Makefile
 ├── deploy.cfg
@@ -364,9 +285,9 @@ can rebuild components of your module and start tests. You can explore
 the Makefile directly and add additional targets as needed, but you
 should not have to edit significantly the basic Makefile targets
 generated by kb-sdk.</p>
-</div>
-<div class="section" id="data">
-<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 ├── data
 │   └── README.md
@@ -375,9 +296,9 @@ generated by kb-sdk.</p>
 <p>Reference data that is smaller than 100 MB can be stored in this directory.
 Larger files and databases cannot be checked into github directly and thus
 will have to use the <a class="reference external" href="../howtos/work_with_reference_data">versioned reference data system</a></p>
-</div>
-<div class="section" id="app-method-implementation">
-<h2>App (Method) Implementation<a class="headerlink" href="#app-method-implementation" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="app-method-implementation">
+<h2>App (Method) Implementation<a class="headerlink" href="#app-method-implementation" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 ├── lib
 │   ├── MyModule
@@ -423,9 +344,9 @@ depend on the programming language you indicated when running
 the implementation files. Instead, create your own modules and packages
 that perform most of the logic, and only include calls to those
 libraries from within the generated Implementation file.</p>
-</div>
-<div class="section" id="scripts-directory-for-utility-docker-scripts">
-<h2>Scripts Directory for Utility/Docker Scripts<a class="headerlink" href="#scripts-directory-for-utility-docker-scripts" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="scripts-directory-for-utility-docker-scripts">
+<h2>Scripts Directory for Utility/Docker Scripts<a class="headerlink" href="#scripts-directory-for-utility-docker-scripts" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 ├── scripts
 │   ├── entrypoint.sh
@@ -441,9 +362,9 @@ scripts, for instance to aid in system dependency installations, fetch a
 reference data file that needs to be stored in the Docker image, or
 other methods for testing or validation, you should place them in the
 scripts directory.</p>
-</div>
-<div class="section" id="test-framework">
-<h2>Test Framework<a class="headerlink" href="#test-framework" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="test-framework">
+<h2>Test Framework<a class="headerlink" href="#test-framework" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 ├── test
 │   ├── MyModule6_server_test.py
@@ -463,9 +384,9 @@ range of input data. The test_local directory is created by <code class="docutil
 create a scratch space for running tests locally. It is important that
 you do not include any passwords in configuration files that you are
 committing to public git repositories.</p>
-</div>
-<div class="section" id="narrative-method-specifications">
-<h2>Narrative Method Specifications<a class="headerlink" href="#narrative-method-specifications" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="narrative-method-specifications">
+<h2>Narrative Method Specifications<a class="headerlink" href="#narrative-method-specifications" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MyModule
 └── ui
     ├── README.md
@@ -493,56 +414,38 @@ your Narrative method.</p>
 <blockquote>
 <div><p><a class="reference external" href="../howtos/add_ui_elements.html">More information about UI specification</a></p>
 </div></blockquote>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="KIDL_spec.html" class="btn btn-neutral float-right" title="KIDL Specification" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="execution_engine.html" class="btn btn-neutral float-left" title="Job Execution" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="execution_engine.html" class="btn btn-neutral float-left" title="Job Execution" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="KIDL_spec.html" class="btn btn-neutral float-right" title="KIDL Specification" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

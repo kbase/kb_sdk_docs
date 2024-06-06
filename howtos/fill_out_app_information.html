@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fully documenting your app &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Running shell commands" href="run_a_shell_command.html" />
     <link rel="prev" title="Editing your app’s Dockerfile" href="edit_your_dockerfile.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,74 +96,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Fully documenting your app</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Fully documenting your app</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/howtos/fill_out_app_information.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="fully-documenting-your-app">
-<h1>Fully documenting your app<a class="headerlink" href="#fully-documenting-your-app" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="complete-module-info">
-<h2>Complete Module Info<a class="headerlink" href="#complete-module-info" title="Permalink to this headline">¶</a></h2>
+             
+  <section id="fully-documenting-your-app">
+<h1>Fully documenting your app<a class="headerlink" href="#fully-documenting-your-app" title="Link to this heading"></a></h1>
+<section id="complete-module-info">
+<h2>Complete Module Info<a class="headerlink" href="#complete-module-info" title="Link to this heading"></a></h2>
 <p>If you haven’t done so already, add the email address of the
 module’s maintainer to the <a href="edit_your_dockerfile.html">Dockerfile.</a></p>
 <p>Icons, Publications, Original tool authors, Institutional Affiliations,
@@ -218,8 +139,8 @@ page for a user to run your app and understand what it’s doing, proper
 arguments and explanation of their use on the input widget, etc.), but
 please take the time to familiarize yourself with these requirements
 before requesting public deployment.</p>
-<div class="section" id="adding-an-icon">
-<h3>Adding an Icon<a class="headerlink" href="#adding-an-icon" title="Permalink to this headline">¶</a></h3>
+<section id="adding-an-icon">
+<h3>Adding an Icon<a class="headerlink" href="#adding-an-icon" title="Link to this heading"></a></h3>
 <p>You can make a custom icon for each app in your module, or use an
 existing one that corresponds to the tool that you have wrapped. Feel
 free to repurpose the icons from existing KBase apps, or make your own.
@@ -247,9 +168,9 @@ file and do not include the path, so <em>not</em> “img/foo.png”). For exampl
 in the file:
 <a href="https://github.com/psdehal/kb_trimmomatic/blob/master/ui/narrative/methods/run_trimmomatic/display.yaml" target="_blank">https://github.com/psdehal/kb_trimmomatic/blob/master/ui/narrative/methods/run_trimmomatic/display.yaml</a></p>
 <p>the <strong>icon:</strong> is configured by the line: icon: trimmomatic-orange.png</p>
-</div>
-<div class="section" id="naming-and-categorizing">
-<h3>Naming and Categorizing<a class="headerlink" href="#naming-and-categorizing" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="naming-and-categorizing">
+<h3>Naming and Categorizing<a class="headerlink" href="#naming-and-categorizing" title="Link to this heading"></a></h3>
 <p>Each app should have a unique display name. The display name is
 configured in the <strong>display.yaml</strong> file at:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">MyUserName</span><span class="o">&gt;/&lt;</span><span class="n">MyModule</span><span class="o">&gt;/</span><span class="n">ui</span><span class="o">/</span><span class="n">narrative</span><span class="o">/</span><span class="n">methods</span><span class="o">/&lt;</span><span class="n">MyMethod</span><span class="o">&gt;/</span><span class="n">display</span><span class="o">.</span><span class="n">yaml</span>
@@ -258,7 +179,7 @@ configured in the <strong>display.yaml</strong> file at:</p>
 <p>and add a <strong>name:</strong> configuration. If you are wrapping an existing tool
 with a known name, please include that name to make it easier for people
 to find it, such as</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Trimmomatic - Read Trimming</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Trimmomatic - Read Trimming</span>
 </pre></div>
 </div>
 <p>You should tag your app with one (or multiple) “categories”. (If you
@@ -294,9 +215,9 @@ subcategories in the near future.)</p>
 categories, as this is a special category that indicates whether your
 app should be shown at all in the App Catalog. The rest of the
 categories are treated as normal tags.</p>
-</div>
-<div class="section" id="writing-your-app-info-page">
-<h3>Writing your App Info page<a class="headerlink" href="#writing-your-app-info-page" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="writing-your-app-info-page">
+<h3>Writing your App Info page<a class="headerlink" href="#writing-your-app-info-page" title="Link to this heading"></a></h3>
 <p>Information for the App Info page is configured in the <strong>display.yaml</strong>
 file at:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">MyUserName</span><span class="o">&gt;/&lt;</span><span class="n">MyModule</span><span class="o">&gt;/</span><span class="n">ui</span><span class="o">/</span><span class="n">narrative</span><span class="o">/</span><span class="n">methods</span><span class="o">/&lt;</span><span class="n">MyMethod</span><span class="o">&gt;/</span><span class="n">display</span><span class="o">.</span><span class="n">yaml</span>
@@ -311,8 +232,8 @@ file at:</p>
 <li><p>publications</p></li>
 <li><p>screenshots</p></li>
 </ul>
-<div class="section" id="name-icon-tooltip-description">
-<h4>Name, Icon, Tooltip, Description<a class="headerlink" href="#name-icon-tooltip-description" title="Permalink to this headline">¶</a></h4>
+<section id="name-icon-tooltip-description">
+<h4>Name, Icon, Tooltip, Description<a class="headerlink" href="#name-icon-tooltip-description" title="Link to this heading"></a></h4>
 <p><strong>name:</strong> and <strong>icon:</strong> are explained above. You must also add a
 <strong>tooltip:</strong> as a secondary short description (usually one sentence
 summarizing the purpose of the app).</p>
@@ -388,9 +309,9 @@ Publications and Links
         <span class="n">link</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">marbl</span><span class="o">/</span><span class="n">Krona</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="screenshots">
-<h4>Screenshots<a class="headerlink" href="#screenshots" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="screenshots">
+<h4>Screenshots<a class="headerlink" href="#screenshots" title="Link to this heading"></a></h4>
 <p>You can add screenshots (or other relevant images) to the “img/” folder
 in the same fashion as the icon image. These screenshots should be
 configured in the <strong>display.yaml</strong> file as a list with one filename on
@@ -405,9 +326,9 @@ list blank.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">screenshots</span><span class="p">:</span> <span class="p">[]</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="example">
-<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="example">
+<h4>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h4>
 <p>For an example of a complete App Info page that would be acceptable for
 public deployment, please see examples in the Trimmomatic app:</p>
 <ul class="simple">
@@ -423,58 +344,40 @@ We reserve the right to delay public release of SDK modules until all
 requirements are met. Please take the time to familiarize yourself with
 these policies to avoid delay in releasing your module.</p>
 </div>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="run_a_shell_command.html" class="btn btn-neutral float-right" title="Running shell commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="edit_your_dockerfile.html" class="btn btn-neutral float-left" title="Editing your app’s Dockerfile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="edit_your_dockerfile.html" class="btn btn-neutral float-left" title="Editing your app’s Dockerfile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="run_a_shell_command.html" class="btn btn-neutral float-right" title="Running shell commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

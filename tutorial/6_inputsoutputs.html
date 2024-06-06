@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>6. Narrative User Interface &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="7. Implement Code" href="7_implement.html" />
     <link rel="prev" title="5. ContigFilter Example" href="5_setup.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,72 +96,32 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>6. Narrative User Interface</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">6. </span>Narrative User Interface</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/tutorial/6_inputsoutputs.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="narrative-user-interface">
-<h1>6. Narrative User Interface<a class="headerlink" href="#narrative-user-interface" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="narrative-user-interface">
+<h1><span class="section-number">6. </span>Narrative User Interface<a class="headerlink" href="#narrative-user-interface" title="Link to this heading"></a></h1>
 <p>Apps on KBase, such as genome assemblers and annotators that run on narrative pages, are created using the KBase SDK.
 The user interface (UI) that users see in narratives and in the app catalog are defined in two files:
 <code class="docutils literal notranslate"><span class="pre">spec.json</span></code> and <code class="docutils literal notranslate"><span class="pre">display.yaml</span></code>. These two files are in a directory called <code class="docutils literal notranslate"><span class="pre">ui/narrative/methods/run_{username}{module_name}</span></code>
@@ -212,12 +133,12 @@ the directory  <code class="docutils literal notranslate"><span class="pre">ui/n
 <p>For historical reasons, in the user interface, methods, modules and apps are synonymous.</p>
 </div>
 <p>View <a href="../references/UI_spec.html">Narrative App UI Specification</a> for more information and options.</p>
-<div class="section" id="update-spec-json">
-<h2>6.1. Update spec.json<a class="headerlink" href="#update-spec-json" title="Permalink to this headline">¶</a></h2>
+<section id="update-spec-json">
+<h2><span class="section-number">6.1. </span>Update spec.json<a class="headerlink" href="#update-spec-json" title="Link to this heading"></a></h2>
 <p>Copy the directory named <code class="docutils literal notranslate"><span class="pre">ui/narrative/methods/run_{username}ContigFilter</span></code> and create a directory for the new app.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># From your module&#39;s root directory:</span>
-$ <span class="nb">cd</span> ui/narrative/methods/
-$ cp -r run_<span class="si">${</span><span class="nv">username</span><span class="si">}</span>ContigFilter run_<span class="si">${</span><span class="nv">username</span><span class="si">}</span>ContigFilter_max
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>ui/narrative/methods/
+$<span class="w"> </span>cp<span class="w"> </span>-r<span class="w"> </span>run_<span class="si">${</span><span class="nv">username</span><span class="si">}</span>ContigFilter<span class="w"> </span>run_<span class="si">${</span><span class="nv">username</span><span class="si">}</span>ContigFilter_max
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter_max</span></code> matches the <code class="docutils literal notranslate"><span class="pre">funcdef</span></code> name we used in the KIDL <code class="docutils literal notranslate"><span class="pre">{username}ContigFilter.spec</span></code> file.</p>
@@ -225,31 +146,31 @@ $ cp -r run_<span class="si">${</span><span class="nv">username</span><span clas
 KIDL <code class="docutils literal notranslate"><span class="pre">.spec</span></code> file and how our parameters will show up in the app’s user interface.</p>
 <p>In the section under <code class="docutils literal notranslate"><span class="pre">parameters</span></code>, there are two input parameters:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;assembly_ref&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;optional&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;advanced&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;default_values&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;&quot;</span> <span class="p">],</span>
-            <span class="nt">&quot;field_type&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;text_options&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;valid_ws_types&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;KBaseGenomeAnnotations.Assembly&quot;</span><span class="p">,</span> <span class="s2">&quot;KBaseGenomes.ContigSet&quot;</span> <span class="p">]</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;optional&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;advanced&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;default_values&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;&quot;</span> <span class="p">],</span>
-            <span class="nt">&quot;field_type&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;text_options&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;validate_as&quot;</span><span class="p">:</span> <span class="s2">&quot;int&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;min_integer&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
+<span class="w">    </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assembly_ref&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;optional&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;advanced&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;default_values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;text_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;valid_ws_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;KBaseGenomeAnnotations.Assembly&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;KBaseGenomes.ContigSet&quot;</span><span class="w"> </span><span class="p">]</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;optional&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;advanced&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;default_values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;text_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;validate_as&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;min_integer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -264,66 +185,66 @@ not the user, so we don’t need a form element for it.</p>
 </ul>
 <p>Edit the file to add the other input parameter <code class="docutils literal notranslate"><span class="pre">max_length</span></code> with similar values. The end of the parameters section should have something like this.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;optional&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;advanced&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;default_values&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;&quot;</span> <span class="p">],</span>
-        <span class="nt">&quot;field_type&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;text_options&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;validate_as&quot;</span><span class="p">:</span> <span class="s2">&quot;int&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;min_integer&quot;</span> <span class="p">:</span> <span class="mi">0</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;max_length&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;optional&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;advanced&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;default_values&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;99999999&quot;</span> <span class="p">],</span>
-        <span class="nt">&quot;field_type&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;text_options&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;validate_as&quot;</span><span class="p">:</span> <span class="s2">&quot;int&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;min_integer&quot;</span> <span class="p">:</span> <span class="mi">0</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;optional&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;advanced&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;default_values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;text_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;validate_as&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;min_integer&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;max_length&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;optional&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;advanced&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;default_values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;99999999&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;text_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;validate_as&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;min_integer&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
 </div>
 <p>Notice that a comma was added to the end of the <code class="docutils literal notranslate"><span class="pre">min_length</span></code> parameter.</p>
 <p>Below parameters, in the section under <code class="docutils literal notranslate"><span class="pre">behavior</span></code>, change <code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter</span></code> to  <code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter_max</span></code>. Note that <code class="docutils literal notranslate"><span class="pre">name</span></code> is the name of the module and doesn’t change and <code class="docutils literal notranslate"><span class="pre">method</span></code> is the name of the app.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;service-mapping&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;{username}ContigFilter&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;run_{username}ContigFilter_max&quot;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="nt">&quot;service-mapping&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;{username}ContigFilter&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;run_{username}ContigFilter_max&quot;</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>Also in the <code class="docutils literal notranslate"><span class="pre">behavior</span></code> section, you will see <code class="docutils literal notranslate"><span class="pre">input_mapping</span></code> options. It contains entries for the input
 parameters.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;input_mapping&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;narrative_system_variable&quot;</span><span class="p">:</span> <span class="s2">&quot;workspace&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;target_property&quot;</span><span class="p">:</span> <span class="s2">&quot;workspace_name&quot;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;narrative_system_variable&quot;</span><span class="p">:</span> <span class="s2">&quot;workspace_id&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;target_property&quot;</span><span class="p">:</span> <span class="s2">&quot;workspace_id&quot;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span> <span class="s2">&quot;assembly_ref&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;target_property&quot;</span><span class="p">:</span> <span class="s2">&quot;assembly_ref&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;target_type_transform&quot;</span><span class="p">:</span> <span class="s2">&quot;resolved-ref&quot;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span> <span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;target_property&quot;</span><span class="p">:</span> <span class="s2">&quot;min_length&quot;</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
+<span class="w">    </span><span class="nt">&quot;input_mapping&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;narrative_system_variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workspace&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;target_property&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workspace_name&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;narrative_system_variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workspace_id&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;target_property&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workspace_id&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assembly_ref&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;target_property&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assembly_ref&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;target_type_transform&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;resolved-ref&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;target_property&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;min_length&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -332,26 +253,26 @@ parameters.</p>
 to an object in the workspace.</p>
 <p>Add the <code class="docutils literal notranslate"><span class="pre">max_length</span></code> to the <code class="docutils literal notranslate"><span class="pre">input_mapping</span></code>. The lines will look something like:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span> <span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;target_property&quot;</span><span class="p">:</span> <span class="s2">&quot;min_length&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span> <span class="s2">&quot;max_length&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;target_property&quot;</span><span class="p">:</span> <span class="s2">&quot;max_length&quot;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;min_length&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;target_property&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;min_length&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;input_parameter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;max_length&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;target_property&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;max_length&quot;</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
 </div>
 <p>Make sure you include the commas after the min_length parameters to maintain valid JSON syntax. We don’t need to change the output section.</p>
 <p>When you make changes to UI files, you can validate the syntax of your changes by running:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kb-sdk validate
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>kb-sdk<span class="w"> </span>validate
 </pre></div>
 </div>
 <p>When you run <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">validate</span></code>, you will get an error about your <code class="docutils literal notranslate"><span class="pre">display.yaml</span></code>, which we will update next.</p>
-</div>
-<div class="section" id="update-display-yaml">
-<h2>6.2. Update display.yaml<a class="headerlink" href="#update-display-yaml" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="update-display-yaml">
+<h2><span class="section-number">6.2. </span>Update display.yaml<a class="headerlink" href="#update-display-yaml" title="Link to this heading"></a></h2>
 <p>The YAML file found in <code class="docutils literal notranslate"><span class="pre">ui/narrative/methods/run_{username}ContigFilter/display.yaml</span></code> holds text content for your app. The text written here will show up in the narrative and in the  <a href="https://narrative.kbase.us/#appcatalog" target="_blank">App Catalog</a>
 for each form element. You only need to set this text for parameters that actually display in the form.</p>
 <div class="admonition note">
@@ -359,14 +280,18 @@ for each form element. You only need to set this text for parameters that actual
 <p>Compare these screenshots of the narrative and App Catalog images of the app “View flux network” with
 the specifications in its <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/view_flux_network/display.yaml" target="_blank">display.yaml file</a> . If screenshots are included, they appear between the <code class="docutils literal notranslate"><span class="pre">tooltip</span></code> and the <code class="docutils literal notranslate"><span class="pre">description</span></code>.</p>
 </div>
-<div class="align-center figure" id="id1">
-<img alt="../_images/View_flux_network_narr1.png" src="../_images/View_flux_network_narr1.png" />
-<p class="caption"><span class="caption-text">View Flux Network App in a narrative.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-<div class="align-center figure" id="id2">
-<a class="reference internal image-reference" href="../_images/ViewFluxNetwork_cat1.png"><img alt="../_images/ViewFluxNetwork_cat1.png" src="../_images/ViewFluxNetwork_cat1.png" style="width: 90%;" /></a>
-<p class="caption"><span class="caption-text">App Catalog for View Flux Network.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="id1">
+<img alt="../_images/View_flux_network_narr.png" src="../_images/View_flux_network_narr.png" />
+<figcaption>
+<p><span class="caption-text">View Flux Network App in a narrative.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/ViewFluxNetwork_cat.png"><img alt="../_images/ViewFluxNetwork_cat.png" src="../_images/ViewFluxNetwork_cat.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">App Catalog for View Flux Network.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>Open the <code class="docutils literal notranslate"><span class="pre">display.yaml</span></code> and update its <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">tooltip</span></code> to say something related to filtering assembly files
 based on contig length with both a min and a max filter.</p>
 <p>You can leave the “screenshots”, “icon” and “suggestions” fields to their default values.</p>
@@ -376,25 +301,25 @@ based on contig length with both a min and a max filter.</p>
 </div>
 <p>Moving down to the “parameters” section, the parameter entries for “assembly_ref” and “min_length” are filled in.</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">parameters</span><span class="p">:</span>
-    <span class="nt">assembly_ref</span><span class="p">:</span>
-        <span class="nt">ui-name</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-            <span class="no">Assembly</span>
-        <span class="nt">short-hint</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-            <span class="no">The assembly to filter (will be overwritten)</span>
-    <span class="nt">min_length</span><span class="p">:</span>
-        <span class="nt">ui-name</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-            <span class="no">Min Length Threshold</span>
-        <span class="nt">short-hint</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-            <span class="no">All contigs below this length will be removed</span>
+<span class="w">    </span><span class="nt">assembly_ref</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">ui-name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">            </span><span class="no">Assembly</span>
+<span class="w">        </span><span class="nt">short-hint</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">            </span><span class="no">The assembly to filter (will be overwritten)</span>
+<span class="w">    </span><span class="nt">min_length</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">ui-name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">            </span><span class="no">Min Length Threshold</span>
+<span class="w">        </span><span class="nt">short-hint</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">            </span><span class="no">All contigs below this length will be removed</span>
 </pre></div>
 </div>
 <p>Edit the file and add the <code class="docutils literal notranslate"><span class="pre">max_length</span></code> parameter. The new lines might look like:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">...</span>
-    <span class="nt">max_length</span><span class="p">:</span>
-    <span class="nt">ui-name</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">Maximum contig length</span>
-    <span class="nt">short-hint</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">Maximum required length of every contig in the assembly</span>
+<span class="w">    </span><span class="nt">max_length</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">ui-name</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">        </span><span class="no">Maximum contig length</span>
+<span class="w">    </span><span class="nt">short-hint</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">        </span><span class="no">Maximum required length of every contig in the assembly</span>
 <span class="nn">...</span>
 </pre></div>
 </div>
@@ -405,56 +330,38 @@ based on contig length with both a min and a max filter.</p>
 the <a href="../references/UI_spec.html">Narrative App UI Specification</a>  You can also experiment with UI generation
 with the <a href="https://narrative.kbase.us/narrative/ws.30118.obj.1" target="_blank">App Spec Editor Narrative</a></p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="7_implement.html" class="btn btn-neutral float-right" title="7. Implement Code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="5_setup.html" class="btn btn-neutral float-left" title="5. ContigFilter Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="5_setup.html" class="btn btn-neutral float-left" title="5. ContigFilter Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="7_implement.html" class="btn btn-neutral float-right" title="7. Implement Code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

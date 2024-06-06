@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dynamic Services &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Updating a module to Python3" href="update_to_py3.html" />
     <link rel="prev" title="Listing and viewing jobs" href="job_manager.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,74 +96,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Dynamic Services</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Dynamic Services</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/howtos/dynamic_services.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="dynamic-services">
-<h1>Dynamic Services<a class="headerlink" href="#dynamic-services" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="dynamic-services-vs-sdk-methods-e-g-apps">
-<h2>Dynamic services vs. SDK Methods (e.g. apps)<a class="headerlink" href="#dynamic-services-vs-sdk-methods-e-g-apps" title="Permalink to this headline">¶</a></h2>
+             
+  <section id="dynamic-services">
+<h1>Dynamic Services<a class="headerlink" href="#dynamic-services" title="Link to this heading"></a></h1>
+<section id="dynamic-services-vs-sdk-methods-e-g-apps">
+<h2>Dynamic services vs. SDK Methods (e.g. apps)<a class="headerlink" href="#dynamic-services-vs-sdk-methods-e-g-apps" title="Link to this heading"></a></h2>
 <p>There are two flavors of SDK Module: dynamic services and apps. Apps run as one-off asynchronous jobs. In contrast to apps, Dynamic Services run as always-on services. Dynamic services cannot call app methods but can call other dynamic services.</p>
 <p>Dynamic services are typically used as the backend for UI elements (such as Narrative widgets) so those elements can be displayed and updated quickly. The function of a dynamic service is often, for a specific workspace type (such as a KBaseGenome.Genome), to pull the data for an object and process the data into a form that the UI element can understand. The dynamic service will often cache the processed form of the data and return parts of the processed form as the UI needs those parts. This way, the UI doesn’t need to keep the entire dataset in memory.</p>
 <div class="admonition important">
@@ -210,13 +131,13 @@
 <p>Remember, dynamic services cannot import other utility modules like DataFileUtil. If your
 service needs these libraries, it can’t be dynamic.</p>
 </div>
-</div>
-<div class="section" id="creating-a-dynamic-service">
-<h2>Creating a dynamic service<a class="headerlink" href="#creating-a-dynamic-service" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="creating-a-dynamic-service">
+<h2>Creating a dynamic service<a class="headerlink" href="#creating-a-dynamic-service" title="Link to this heading"></a></h2>
 <p>By default, all SDK modules are SDK Methods that run asynchronously. To mark a module as a
 dynamic service, add the following to the kbase.yml file:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">service-config</span><span class="p">:</span>
-    <span class="nt">dynamic-service</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">dynamic-service</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </pre></div>
 </div>
 <p>You can then register your module as usual and start and stop it in a production environment using the <a href="https://appdev.kbase.us/#catalog/services" target="_blank">catalog interface</a> as described below in the <a class="reference internal" href="#in-kbase"><span class="std std-ref">Manage dynamic services in a KBase environment section</span></a>.
@@ -231,17 +152,17 @@ Calls to other services should be initialized with the Service Wizard URL rather
 <span class="n">gaa</span> <span class="o">=</span> <span class="n">GenomeAnnotationAPI</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">serviceWizardURL</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="n">ctx</span><span class="p">[</span><span class="s1">&#39;token&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="start-and-stop-a-dynamic-service-locally">
-<h2>Start and stop a dynamic service locally<a class="headerlink" href="#start-and-stop-a-dynamic-service-locally" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="start-and-stop-a-dynamic-service-locally">
+<h2>Start and stop a dynamic service locally<a class="headerlink" href="#start-and-stop-a-dynamic-service-locally" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Run kb-sdk test. This will set up a workdir in test_local like this:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tree test_local/workdir/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>tree<span class="w"> </span>test_local/workdir/
 test_local/workdir/
-├── config.properties
-├── tmp
-└── token
+├──<span class="w"> </span>config.properties
+├──<span class="w"> </span>tmp
+└──<span class="w"> </span>token
 </pre></div>
 </div>
 <p>2. Create a run_container.sh file in test_local by copying run_tests.sh to run_container.sh and
@@ -253,99 +174,81 @@ making the following edits to the last line:</p>
 </ul>
 <p>When you’re done it should look similar to this (obviously the module name will be different):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
-<span class="nv">script_dir</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">cd</span> <span class="s2">&quot;</span><span class="k">$(</span>dirname <span class="s2">&quot;</span><span class="k">$(</span>readlink -f <span class="s2">&quot;</span><span class="nv">$0</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">pwd</span><span class="k">)</span><span class="s2">&quot;</span>
-<span class="nb">cd</span> <span class="nv">$script_dir</span>/..
-<span class="nv">$script_dir</span>/run_docker.sh run --user <span class="k">$(</span>id -u<span class="k">)</span> -v
-<span class="nv">$script_dir</span>/workdir:/kb/module/work -d -p <span class="m">10001</span>:5000 --dns <span class="m">8</span>.8.8.8
+<span class="nv">script_dir</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>readlink<span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$0</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">pwd</span><span class="k">)</span><span class="s2">&quot;</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$script_dir</span>/..
+<span class="nv">$script_dir</span>/run_docker.sh<span class="w"> </span>run<span class="w"> </span>--user<span class="w"> </span><span class="k">$(</span>id<span class="w"> </span>-u<span class="k">)</span><span class="w"> </span>-v
+<span class="nv">$script_dir</span>/workdir:/kb/module/work<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">10001</span>:5000<span class="w"> </span>--dns<span class="w"> </span><span class="m">8</span>.8.8.8
 test/htmlfilesetserv:latest
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Run the script:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./run_container.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./run_container.sh
 c8ea1197f9251323746d9ae42363387381ee79f6c06cd826e6dbfba0a7fd703b
 </pre></div>
 </div>
 <p>You can now interact with the service at the port you specified (in the example above, 10001).</p>
 <p>To view logs, get the container ID with docker ps and run docker logs:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker ps
-CONTAINER ID
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>docker<span class="w"> </span>ps
+CONTAINER<span class="w"> </span>ID
 CREATED
 NAMES
 c8ea1197f925
-<span class="s2">&quot;./scripts/entrypoint&quot;</span> <span class="m">2</span> minutes ago Up <span class="m">2</span> minutes <span class="m">0</span>.0.0.0:10001-&gt;5000/tcp gigantic_swirles
-$ docker logs c8ea1197f925
-<span class="m">2016</span>-10-14 <span class="m">22</span>:55:27.835:INFO::Logging to StdErrLog::DEBUG<span class="o">=</span><span class="nb">false</span> via
+<span class="s2">&quot;./scripts/entrypoint&quot;</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w"> </span>Up<span class="w"> </span><span class="m">2</span><span class="w"> </span>minutes<span class="w"> </span><span class="m">0</span>.0.0.0:10001-&gt;5000/tcp<span class="w"> </span>gigantic_swirles
+$<span class="w"> </span>docker<span class="w"> </span>logs<span class="w"> </span>c8ea1197f925
+<span class="m">2016</span>-10-14<span class="w"> </span><span class="m">22</span>:55:27.835:INFO::Logging<span class="w"> </span>to<span class="w"> </span>StdErrLog::DEBUG<span class="o">=</span><span class="nb">false</span><span class="w"> </span>via
 org.eclipse.jetty.util.log.StdErrLog
-<span class="m">2016</span>-10-14 <span class="m">22</span>:55:27.892:INFO::jetty-7.0.0.v20091005
+<span class="m">2016</span>-10-14<span class="w"> </span><span class="m">22</span>:55:27.892:INFO::jetty-7.0.0.v20091005
 *snip*
 </pre></div>
 </div>
 <p>When you’re done, shut down the docker container:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker stop c8ea1197f925
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>docker<span class="w"> </span>stop<span class="w"> </span>c8ea1197f925
 c8ea1197f925
 </pre></div>
 </div>
-</div>
-<div class="section" id="manage-dynamic-services-in-a-kbase-environment">
-<span id="in-kbase"></span><h2>Manage dynamic services in a KBase environment<a class="headerlink" href="#manage-dynamic-services-in-a-kbase-environment" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="manage-dynamic-services-in-a-kbase-environment">
+<span id="in-kbase"></span><h2>Manage dynamic services in a KBase environment<a class="headerlink" href="#manage-dynamic-services-in-a-kbase-environment" title="Link to this heading"></a></h2>
 <p>The <a href="https://appdev.kbase.us/#catalog/services" target="_blank">catalog interface</a> provides tools to launch, inspect and stop dynamic services in each environment. The top of this page is a list of currently running services. There may be multiple instances of a service running that are based on different git hashes. As described above, the Service Wizard will route requests to the most current version of a released service (falling back to Beta or Dev if the service is not yet released). If this latest version is not running when a request is received, the service wizard will launch a new instance. This behavior improves resilience because if a container crashes, it will be restarted by the next service request. However, it also means that there is no rapid way to revert to an earlier version of the service if a problem is discovered with the service.</p>
 <img alt="Service Catalog" src="../_images/service-catalog.png" />
 <p>Logs of STDOUT and STDERR for services are also available to catalog administrators and may prove useful for debugging.
 Finally, catalog admins may also stop running services. There is no default timeout for dynamic services,
 so developers should periodically cull old versions of their services that are still running as they release new versions.
 Below the active services are lists of Released, Beta and Dev services that developers may launch but the Service Wizard generally renders this unnecessary.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="update_to_py3.html" class="btn btn-neutral float-right" title="Updating a module to Python3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="job_manager.html" class="btn btn-neutral float-left" title="Listing and viewing jobs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="job_manager.html" class="btn btn-neutral float-left" title="Listing and viewing jobs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="update_to_py3.html" class="btn btn-neutral float-right" title="Updating a module to Python3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
