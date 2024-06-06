@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>5. ContigFilter Example &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="6. Narrative User Interface" href="6_inputsoutputs.html" />
     <link rel="prev" title="4. Hello World Example" href="4_helloworld.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,72 +96,32 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>5. ContigFilter Example</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5. </span>ContigFilter Example</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/tutorial/5_setup.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="contigfilter-example">
-<h1>5. ContigFilter Example<a class="headerlink" href="#contigfilter-example" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="contigfilter-example">
+<h1><span class="section-number">5. </span>ContigFilter Example<a class="headerlink" href="#contigfilter-example" title="Link to this heading"></a></h1>
 <p>The <a href="../tutorial/4_helloworld.html">Hello World</a> example demonstrated where various components of the SDK are located and how to run a basic test.
 This “ContigFilter” example adds more features of the SDK. In practice, apps need to interact with the workspace/narrative, create reports from the app output, and potentially interact with database objects.</p>
 <p>For this tutorial, we will use an example module that has a few more specific details so we can explore how to make
@@ -213,8 +134,8 @@ changes. The example is taken from <a href="https://github.com/kbaseapps/ContigF
 </ol>
 <p>For this tutorial, we will be looking at the app <code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter</span></code>. The app takes as inputs, an <code class="docutils literal notranslate"><span class="pre">assembly</span> <span class="pre">file</span></code> and applies
 a <code class="docutils literal notranslate"><span class="pre">minimum</span> <span class="pre">length</span></code> filter to the contigs. <strong>The exercise below creates a second app that filters the contigs by a ``maximum_length``</strong></p>
-<div class="section" id="app-design-checklist">
-<h2>5.1. App Design Checklist<a class="headerlink" href="#app-design-checklist" title="Permalink to this headline">¶</a></h2>
+<section id="app-design-checklist">
+<h2><span class="section-number">5.1. </span>App Design Checklist<a class="headerlink" href="#app-design-checklist" title="Link to this heading"></a></h2>
 <p>When planing a new KBase app we recommend reviewing the <a href="../references/design_checklist.html">Design Checklist</a> to help clarify the the inputs, outputs, and dependencies of the app.
 An example for our second filter contig app is below:</p>
 <ul class="simple">
@@ -281,29 +202,29 @@ An example for our second filter contig app is below:</p>
 </dl>
 </li>
 </ul>
-</div>
-<div class="section" id="module-description">
-<h2>5.2. Module Description<a class="headerlink" href="#module-description" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-description">
+<h2><span class="section-number">5.2. </span>Module Description<a class="headerlink" href="#module-description" title="Link to this heading"></a></h2>
 <p>Now that we have a clear idea of what our apps will do, we can begin to build it. Because this example is used in training and is built by many users, the <code class="docutils literal notranslate"><span class="pre">{username}</span></code> is added to make sure that your module has a unique
 name. However, you would not usually put your own username in the module name, and instead name it something like <code class="docutils literal notranslate"><span class="pre">ContigFilter</span></code>.</p>
 <p>If not performed already, for convenience define these bash variables: <code class="docutils literal notranslate"><span class="pre">your_kbase_username=jane.smith</span></code> and <code class="docutils literal notranslate"><span class="pre">username=${your_kbase_username}</span></code>. Because we are working to implement a new module, re-define the module name bash variable: <code class="docutils literal notranslate"><span class="pre">module_name=ContigFilter</span></code>.</p>
 <p>To get started, please run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kb-sdk init --example --language python --user <span class="si">${</span><span class="nv">your_kbase_username</span><span class="si">}</span> <span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
-<span class="nb">cd</span> <span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kb-sdk<span class="w"> </span>init<span class="w"> </span>--example<span class="w"> </span>--language<span class="w"> </span>python<span class="w"> </span>--user<span class="w"> </span><span class="si">${</span><span class="nv">your_kbase_username</span><span class="si">}</span><span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
+<span class="nb">cd</span><span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
 make
 </pre></div>
 </div>
 <p>You can now edit the <code class="docutils literal notranslate"><span class="pre">kbase.yml</span></code> file to include a better description of your module. It is in the root directory of the module.
 Be sure to describe what your module and its apps actually do. In future revisions you can update the version and the list of authors/owners.</p>
-</div>
-<div class="section" id="the-specification-file">
-<h2>5.3. The Specification File<a class="headerlink" href="#the-specification-file" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="the-specification-file">
+<h2><span class="section-number">5.3. </span>The Specification File<a class="headerlink" href="#the-specification-file" title="Link to this heading"></a></h2>
 <p>In the root directory of the module, there is a specification file is called <code class="docutils literal notranslate"><span class="pre">{username}ContigFilter.spec</span></code>.
 This file uses a proprietary language called KIDL to specify which functions in the module will be accessible to other SDK services, as well as to specify the input and output types.
 The specification file is used to generate client code in any KBase supported language. Therefore, FileUtils and modules that contain functions that are primarily used by other modules will have a detailed KIDL spec.
 However, for modules that are focused on defining user-facing apps, a very basic specification is all we need.</p>
-<div class="section" id="file-structure">
-<h3>5.3.1. File structure<a class="headerlink" href="#file-structure" title="Permalink to this headline">¶</a></h3>
+<section id="file-structure">
+<h3><span class="section-number">5.3.1. </span>File structure<a class="headerlink" href="#file-structure" title="Link to this heading"></a></h3>
 <p>If you open <code class="docutils literal notranslate"><span class="pre">{username}ContigFilter.spec</span></code>, you should see two types of specifications:</p>
 <p><strong>Input/Output Structures</strong></p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>typedef structure {
@@ -327,9 +248,9 @@ containing two keys, <code class="docutils literal notranslate"><span class="pre
 <p>The next section defines the functions that may be called by other SDK modules or app cells. In this case we find a single function called
 <code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter</span></code> which filters contigs using a minimum contig length. As input it receives a mapping called <code class="docutils literal notranslate"><span class="pre">params</span></code> (also a dictionary in Python)
 that is defined by an apps UI specification and produces the <code class="docutils literal notranslate"><span class="pre">ReportResults</span></code> structure described above.</p>
-</div>
-<div class="section" id="edit-the-spec-file">
-<h3>5.3.2. Edit the Spec file<a class="headerlink" href="#edit-the-spec-file" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="edit-the-spec-file">
+<h3><span class="section-number">5.3.2. </span>Edit the Spec file<a class="headerlink" href="#edit-the-spec-file" title="Link to this heading"></a></h3>
 <p>Our new app will also receive parameters from the UI and create a report, so all we need to do copy the funcdef line and give the function a unique name.
 We also should add a little description about our new function in a comment that precedes it. Once we are done, our <code class="docutils literal notranslate"><span class="pre">{username}ContigFilter.spec</span></code> file should look like the following:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{username}module ContigFilter {
@@ -356,57 +277,39 @@ We also should add a little description about our new function in a comment that
 <p class="admonition-title">Important</p>
 <p>You must rerun <em>make</em> after each change to the KIDL specification to regenerate implementation and server code used in the codebase.</p>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="6_inputsoutputs.html" class="btn btn-neutral float-right" title="6. Narrative User Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="4_helloworld.html" class="btn btn-neutral float-left" title="4. Hello World Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="4_helloworld.html" class="btn btn-neutral float-left" title="4. Hello World Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="6_inputsoutputs.html" class="btn btn-neutral float-right" title="6. Narrative User Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

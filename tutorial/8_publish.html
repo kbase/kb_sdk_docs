@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>8. Publish and Update &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Common Questions" href="../references/questions_and_answers.html" />
     <link rel="prev" title="7. Implement Code" href="7_implement.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,106 +96,72 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>8. Publish and Update</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">8. </span>Publish and Update</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/tutorial/8_publish.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="publish-and-update">
-<h1>8. Publish and Update<a class="headerlink" href="#publish-and-update" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="publish-and-update">
+<h1><span class="section-number">8. </span>Publish and Update<a class="headerlink" href="#publish-and-update" title="Link to this heading"></a></h1>
 <p>For all updates, it is good practice to update the RELEASE_NOTES.md file in the root directory for the module.</p>
-<div class="section" id="publish-all-git-commits">
-<h2>8.1. Publish all git commits<a class="headerlink" href="#publish-all-git-commits" title="Permalink to this headline">¶</a></h2>
+<section id="publish-all-git-commits">
+<h2><span class="section-number">8.1. </span>Publish all git commits<a class="headerlink" href="#publish-all-git-commits" title="Link to this heading"></a></h2>
 <p>Make sure you have run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> on all the changes in your app’s codebase, then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> to your public github URL. If you are part of a team writing the app, all the commits need to be pushed the the repo you want to use for KBase.</p>
-</div>
-<div class="section" id="appdev">
-<h2>8.2. Appdev<a class="headerlink" href="#appdev" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="appdev">
+<h2><span class="section-number">8.2. </span>Appdev<a class="headerlink" href="#appdev" title="Link to this heading"></a></h2>
 <p><a href="https://appdev.kbase.us" target="_blank">Appdev (https://appdev.kbase.us)</a> is a separate KBase narrative server that is used by app developers like yourself to publish in-progress versions of their apps and test and share them using real data. Registering and updating you module will be
 done on the appdev server. After you click on the <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">In</span></code> button and pick you authentication type, you will
 encounter a screen with:</p>
-<div class="align-center figure" id="id1">
+<figure class="align-center" id="id1">
 <img alt="../_images/appdev_login.png" src="../_images/appdev_login.png" />
-<p class="caption"><span class="caption-text">Logging into Appdev</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Logging into Appdev</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>As the page says, direct login doesn’t work and the page will go away when a solution is implemented.
 If you are already logged into <a href="https://narrative.kbase.us" target="_blank">production (https://narrative.kbase.us)</a>, start with step 2. Otherwise start at step 1.
 Step 4 will leave you at a page with no more hotlinks. In step 5, you will click on the Dashboard icon
 on the left and will be taken to the Dashboard that is the starting point in other environments.</p>
-</div>
-<div class="section" id="register-with-kbase">
-<h2>8.3. Register with KBase<a class="headerlink" href="#register-with-kbase" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="register-with-kbase">
+<h2><span class="section-number">8.3. </span>Register with KBase<a class="headerlink" href="#register-with-kbase" title="Link to this heading"></a></h2>
 <p>To see your app in a narrative, the module must first be registered. After you have logged into appdev,
 go to the <a href="https://appdev.kbase.us/#catalog/register" target="_blank">Module Registration</a> page.  Enter your public git repo for the URL:</p>
-<div class="align-center figure" id="id2">
+<figure class="align-center" id="id2">
 <img alt="../_images/register.png" src="../_images/register.png" />
-<p class="caption"><span class="caption-text">Register your module.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Register your module.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>and click on <code class="docutils literal notranslate"><span class="pre">Register</span></code>. Wait for the registration to complete (it may take a while on the first registration as it has to build the Docker image that is specific to your module from scratch).</p>
 <p>This page can be used for both the initial registration and registering updates. Because you may be registering
 the module several times, a link to the page is also found at the top of the App Catalog.</p>
-<div class="align-center figure" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../_images/register_module.png" src="../_images/register_module.png" />
-<p class="caption"><span class="caption-text">Top of App Catalog page for appdev</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Top of App Catalog page for appdev</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>Note that you must be an approved developer to register a new module. You can apply for a
 KBase developer account by going to <a href=" https://accounts.kbase.us/index.php?tpl=request_identity.tpl" target="_blank">https://accounts.kbase.us/index.php?tpl=request_identity.tpl</a>. If you are a US citizen, your account
 can be created within a few days. For foreign nationals, it may take several weeks (and,
@@ -255,10 +182,12 @@ Use the dropdown for <code class="docutils literal notranslate"><span class="pre
 the development environment. Go to <a href="https://appdev.kbase.us" target="_blank">Appdev (https://appdev.kbase.us)</a>
 and create or open a narrative. In the <code class="docutils literal notranslate"><span class="pre">APPS</span> <span class="pre">Panel</span></code> on the left, click on the <code class="docutils literal notranslate"><span class="pre">R</span></code> to change
 the environment from <code class="docutils literal notranslate"><span class="pre">released</span></code> to <code class="docutils literal notranslate"><span class="pre">beta</span></code>.</p>
-<div class="align-center figure" id="id4">
+<figure class="align-center" id="id4">
 <img alt="../_images/Change_to_beta.png" src="../_images/Change_to_beta.png" />
-<p class="caption"><span class="caption-text">Register your module.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Register your module.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>Click on the <code class="docutils literal notranslate"><span class="pre">B</span></code> to change from <code class="docutils literal notranslate"><span class="pre">beta</span></code> to a <code class="docutils literal notranslate"><span class="pre">D</span></code> for development. You new app should be
 among the apps listed in the <code class="docutils literal notranslate"><span class="pre">APPS</span> <span class="pre">Panel</span></code>. On the documentation page for “Fully documenting your app”,
 you can assign one or more categories for your app. If you didn’t assign a category, it will be
@@ -266,9 +195,9 @@ listed with the <code class="docutils literal notranslate"><span class="pre">Unc
 and expand the list of apps in the category. On the same documentation page, you hopefully selected an icon
 for your app. Creating a distinctive icon makes it easier to find in the list. It is ready for
 you and any developers to test the app.</p>
-</div>
-<div class="section" id="updating-and-beta">
-<h2>8.4. Updating and Beta<a class="headerlink" href="#updating-and-beta" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="updating-and-beta">
+<h2><span class="section-number">8.4. </span>Updating and Beta<a class="headerlink" href="#updating-and-beta" title="Link to this heading"></a></h2>
 <p>The module must be re-registered every time you make updates. You can navigate to the module page using the App Catalog or go directly to:</p>
 <p><a href="https://narrative.kbase.us/#appcatalog/module/my_module_name" target="_blank">https://narrative.kbase.us/#appcatalog/module/MODULE_NAME</a></p>
 <p>To update an app, open the page, fill in the <code class="docutils literal notranslate"><span class="pre">github</span></code> public URL, and then click the <strong>REGISTER</strong> button. You can optionally specify a particular commit hash for your repository (useful if you want to test a feature branch prior to merging into master) or leave this field blank to build from the latest commit on the master branch.</p>
@@ -280,9 +209,9 @@ other KBase users test the app in production and provide you with feedback.</p>
 <p>When you have made you last changes and want to release the app to <code class="docutils literal notranslate"><span class="pre">beta</span></code>, go to the App Catelog page
 <a href="https://narrative.kbase.us/#appcatalog/module/my_module_name" target="_blank">https://narrative.kbase.us/#appcatalog/module/MODULE_NAME</a> for your module. The top header on the page will have “Module Catalog”. If you are the module owner,
 you will see <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> next to the words “Module Admin Tools”. Click on the <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>. The window will expand and you now have a link for ‘Migrate Current Dev Version to Beta’. Click on the link and the app is in <code class="docutils literal notranslate"><span class="pre">beta</span></code> and available for all users to try.</p>
-</div>
-<div class="section" id="release-to-production">
-<h2>8.5. Release to Production<a class="headerlink" href="#release-to-production" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="release-to-production">
+<h2><span class="section-number">8.5. </span>Release to Production<a class="headerlink" href="#release-to-production" title="Link to this heading"></a></h2>
 <p>The final step is to get the app released. It is on the same page as requesting <code class="docutils literal notranslate"><span class="pre">beta</span></code> but the button you click
 is called ‘Request New Release’. The KBase Implementation Team staff will review the module and apps and make sure that
 they meet both the <a href="../references/dev_guidelines.html">Developer Guidance</a> and the <a href="https://github.com/kbase/roadmap/blob/master/KBase%20product%20requirements.md">Must Haves</a>.</p>
@@ -290,56 +219,38 @@ they meet both the <a href="../references/dev_guidelines.html">Developer Guidanc
 <p class="admonition-title">Important</p>
 <p>Please bear in mind that for public release, your module must meet all the requirements laid out in the  <a href="../references/dev_guidelines.html">KBase SDK Policies</a>. We reserve the right to delay public release of SDK Modules until all requirements are met. Please take the time to familiarize yourself with these policies to avoid delay in releasing your Module.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../references/questions_and_answers.html" class="btn btn-neutral float-right" title="Common Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="7_implement.html" class="btn btn-neutral float-left" title="7. Implement Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="7_implement.html" class="btn btn-neutral float-left" title="7. Implement Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../references/questions_and_answers.html" class="btn btn-neutral float-right" title="Common Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

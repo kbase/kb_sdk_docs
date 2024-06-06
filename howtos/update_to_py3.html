@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Updating a module to Python3 &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Design Checklist" href="../references/design_checklist.html" />
     <link rel="prev" title="Dynamic Services" href="dynamic_services.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,79 +96,39 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Updating a module to Python3</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Updating a module to Python3</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/howtos/update_to_py3.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="updating-a-module-to-python3">
-<h1>Updating a module to Python3<a class="headerlink" href="#updating-a-module-to-python3" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="updating-a-module-to-python3">
+<h1>Updating a module to Python3<a class="headerlink" href="#updating-a-module-to-python3" title="Link to this heading"></a></h1>
 <p>Many KBase modules are written in Python 2.7 which will reach the end of its service support in 2020. Beyond this date, Python 2 will cease to receive critical security updates. Fortunately, it’s fairly easy to convert any single module to Python 3 as long as the module has a reasonably comprehensive set of unit tests. In addition to being secure for the future, these modules will access a host of performance and language features available in the 3.x releases.</p>
-<div class="section" id="converting-the-source-code-with-2to3">
-<h2>Converting the source code with 2to3<a class="headerlink" href="#converting-the-source-code-with-2to3" title="Permalink to this headline">¶</a></h2>
+<section id="converting-the-source-code-with-2to3">
+<h2>Converting the source code with 2to3<a class="headerlink" href="#converting-the-source-code-with-2to3" title="Link to this heading"></a></h2>
 <p>There are a number of compatibility tools available such as  <a href="https://pythonhosted.org/six/" target="_blank">six</a>   or  <a href="http://python-future.org/automatic_conversion.html" target="_blank">futurize</a>  which allow the execution of the same code by both Python 2 and Python 3 interpreters. Fortunately, KBase’s module system means that preserving back compatibility with Python 2 is not necessary and we can use the built in <a href="https://docs.python.org/2/library/2to3.html" target="_blank">2to3</a> executable. You can update all the python files in the directory in one fell swoop with the command <code class="docutils literal notranslate"><span class="pre">2to3</span> <span class="pre">-w</span> <span class="pre">&lt;path_to_your_module&gt;</span></code> but you should be aware that you might not always agree with these changes (see more in Caveats). Additionally, your Dockerfile will have to be updated to build <code class="docutils literal notranslate"><span class="pre">FROM</span> <span class="pre">kbase/sdkbase2:python</span></code>. Once the Dockerfile is updated, all future test will be run in Python 3, allowing you to verify that the updated code is running correctly. Check over the code to make sure that none of the caveats in the next section apply.</p>
-</div>
-<div class="section" id="caveats">
-<h2>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="caveats">
+<h2>Caveats<a class="headerlink" href="#caveats" title="Link to this heading"></a></h2>
 <p>2to3 does a very good job catching most of the breaking changes between the python versions. However, there a few issues that are not caught by the library that may require some manual fixing:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Maketrans</span></code> imports from <code class="docutils literal notranslate"><span class="pre">str</span></code> in Python3 not <code class="docutils literal notranslate"><span class="pre">string</span></code>.</p></li>
@@ -225,63 +146,45 @@
 </li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">2to3</span></code> will update the #py2 version to match the Python 3 syntax, so it’s recommended to either revert this change or remove the try-except block</p>
-</div>
-<div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>Neat new trick available in Python 3: <a href="http://whypy3.com/" target="_blank">http://whypy3.com/</a></p></li>
 <li><p>Check Python 3 readiness of common packages: <a href="http://py3readiness.org/" target="_blank">http://py3readiness.org/</a></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../references/design_checklist.html" class="btn btn-neutral float-right" title="Design Checklist" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="dynamic_services.html" class="btn btn-neutral float-left" title="Dynamic Services" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="dynamic_services.html" class="btn btn-neutral float-left" title="Dynamic Services" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../references/design_checklist.html" class="btn btn-neutral float-right" title="Design Checklist" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

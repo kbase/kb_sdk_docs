@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7. Implement Code &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="8. Publish and Update" href="8_publish.html" />
     <link rel="prev" title="6. Narrative User Interface" href="6_inputsoutputs.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,72 +96,32 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>7. Implement Code</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>Implement Code</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/tutorial/7_implement.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="implement-code">
-<h1>7. Implement Code<a class="headerlink" href="#implement-code" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="implement-code">
+<h1><span class="section-number">7. </span>Implement Code<a class="headerlink" href="#implement-code" title="Link to this heading"></a></h1>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>If you are new to Python, here are a few tips:</p>
@@ -249,13 +170,13 @@ The new app <code class="docutils literal notranslate"><span class="pre">run_{us
 <p>The rest of this page is for those who want to understand how the code works and how to create tests for the
 code. It goes through the process of building up the code section, step-by-step.</p>
 </div>
-<div class="section" id="receive-parameters">
-<h2>7.1. Receive parameters<a class="headerlink" href="#receive-parameters" title="Permalink to this headline">¶</a></h2>
+<section id="receive-parameters">
+<h2><span class="section-number">7.1. </span>Receive parameters<a class="headerlink" href="#receive-parameters" title="Link to this heading"></a></h2>
 <p>Our first goal is to receive and print the method’s parameters. Open <code class="docutils literal notranslate"><span class="pre">method_nameImpl.py</span></code> and find the <code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter_max</span></code> method, which should have some auto-generated boilerplate code and docstrings.</p>
 <p>You want to edit code between the comments <code class="docutils literal notranslate"><span class="pre">#BEGIN</span> <span class="pre">run_{username}ContigFilter_max</span></code> and <code class="docutils literal notranslate"><span class="pre">#END</span> <span class="pre">run_{username}ContigFilter_max</span></code>. These are special SDK-generated annotations that we have to keep in the code to get everything to compile correctly. If you run <code class="docutils literal notranslate"><span class="pre">make</span></code> again in the future, it will update the code outside these comments, but will not change the code you put between the <code class="docutils literal notranslate"><span class="pre">#BEGIN</span></code> and <code class="docutils literal notranslate"><span class="pre">#END</span></code> comments.</p>
 <p>Between the comments, add a simple print statement, such as: <code class="docutils literal notranslate"><span class="pre">print(params['min_length'],</span> <span class="pre">params['max_length'],</span> <span class="pre">params['assembly_ref'])</span></code>. This let us see what is getting passed into our method.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_</span><span class="p">{</span><span class="n">username</span><span class="p">}</span><span class="n">ContigFilter_max</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctx</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    :param workspace_name: instance of String</span>
 <span class="sd">    :param params: instance of type &quot;ContigFilterParams&quot; (Input</span>
 <span class="sd">       parameters) -&gt; structure: parameter &quot;min_length&quot; of Long,</span>
@@ -266,16 +187,16 @@ code. It goes through the process of building up the code section, step-by-step.
     <span class="c1"># ctx is the context object</span>
     <span class="c1"># return variables are: returnVal</span>
     <span class="c1">#BEGIN run_{username}ContigFilter_max</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;min_length&#39;</span><span class="p">],</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;max_length&#39;</span><span class="p">],</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;assembly_ref&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;min_length&#39;</span><span class="p">],</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;max_length&#39;</span><span class="p">],</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;assembly_ref&#39;</span><span class="p">])</span>
     <span class="n">output</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="c1">#END run_{username}ContigFilter_max</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">output</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Don’t try to change the docstring, or anything else outside the <code class="docutils literal notranslate"><span class="pre">#BEGIN</span> <span class="pre">run_{username}ContigFilter_max</span></code> and <code class="docutils literal notranslate"><span class="pre">#END</span> <span class="pre">run_{username}ContigFilter_max</span></code> comments, as your change will get overwritten by the <code class="docutils literal notranslate"><span class="pre">make</span></code> command.</p>
-</div>
-<div class="section" id="initialize-a-test">
-<h2>7.2. Initialize a test<a class="headerlink" href="#initialize-a-test" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="initialize-a-test">
+<h2><span class="section-number">7.2. </span>Initialize a test<a class="headerlink" href="#initialize-a-test" title="Link to this heading"></a></h2>
 <p>Your <code class="docutils literal notranslate"><span class="pre">{username}ContigFilterImpl.py</span></code> file is tested using <code class="docutils literal notranslate"><span class="pre">test/{username}ContigFilterImpl_server_test.py</span></code>. This file also has a variety of auto-generated boilerplate code and tests for the first app.  Python will automatically run all methods that start with the name <code class="docutils literal notranslate"><span class="pre">test</span></code>. There are three tests for the old app. As a temporary measure, we will rename them so they don’t run until we are done working on the new app.</p>
 <ul class="simple">
 <li><p>Change <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">test_run_{username}ContigFilter_ok(self)`</span></code> to <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">my_test_run_{username}ContigFilter_ok(self)</span></code></p></li>
@@ -291,7 +212,7 @@ code. It goes through the process of building up the code section, step-by-step.
         <span class="s1">&#39;min_length&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
         <span class="s1">&#39;max_length&#39;</span><span class="p">:</span> <span class="mi">1000000</span>
     <span class="p">})</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
     <span class="c1"># TODO -- assert some things (later)</span>
 </pre></div>
 </div>
@@ -304,9 +225,9 @@ code. It goes through the process of building up the code section, step-by-step.
 </dl>
 </div>
 <p>Run <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> and, if everything works, you’ll see the docker container boot up, the <code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter_max</span></code> method will get called, and you will see some printed output.</p>
-</div>
-<div class="section" id="set-the-callback-url-and-scratch-path">
-<h2>7.3. Set the callback URL and scratch path<a class="headerlink" href="#set-the-callback-url-and-scratch-path" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="set-the-callback-url-and-scratch-path">
+<h2><span class="section-number">7.3. </span>Set the callback URL and scratch path<a class="headerlink" href="#set-the-callback-url-and-scratch-path" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In this “ContigFilter” module, the steps in this section have already been done. They are included here so you can see why they were added to the basic module template.</p>
@@ -332,7 +253,7 @@ code. It goes through the process of building up the code section, step-by-step.
 <p>Also added was an <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">os</span></code> in the header of your <code class="docutils literal notranslate"><span class="pre">{username}ContigFilterImpl.py</span></code> file, between the <code class="docutils literal notranslate"><span class="pre">#BEGIN_HEADER</span></code> and <code class="docutils literal notranslate"><span class="pre">#END_HEADER</span></code> comments.</p>
 <p>We need to convert the reference to bacterial genome data, passed as an input parameter, into an actual FASTA file that our app can access. For that, we can use the <a href="https://github.com/kbaseapps/AssemblyUtil" target="_blank">AssemblyUtil </a> app.</p>
 <p>The app was installed from your repository’s root directory with:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kb-sdk install AssemblyUtil
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>kb-sdk<span class="w"> </span>install<span class="w"> </span>AssemblyUtil
 </pre></div>
 </div>
 <p>That added an entry for <code class="docutils literal notranslate"><span class="pre">AssemblyUtil</span></code> to your <code class="docutils literal notranslate"><span class="pre">dependencies.json</span></code> file. It also added a python package under <code class="docutils literal notranslate"><span class="pre">lib/installed_clients</span></code>. Other dependencies can be added the same way.</p>
@@ -345,9 +266,9 @@ code. It goes through the process of building up the code section, step-by-step.
 </pre></div>
 </div>
 <p>If you made any changes to this code, run the <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> command again to make sure you have no errors.</p>
-</div>
-<div class="section" id="add-some-basic-validations">
-<h2>7.4. Add some basic validations<a class="headerlink" href="#add-some-basic-validations" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="add-some-basic-validations">
+<h2><span class="section-number">7.4. </span>Add some basic validations<a class="headerlink" href="#add-some-basic-validations" title="Link to this heading"></a></h2>
 <p>It’s good practice to make some run-time checks of the parameters passed into your <code class="docutils literal notranslate"><span class="pre">{username}ContigFilterImpl#run_{username}ContigFilter_max</span></code> method. While params will get checked in the Narrative UI, if your app ever gets called from another codebase, it will bypass any UI typechecks.</p>
 <p>Make sure your user passes in a workspace, an assembly reference, a minimum length greater than zero, and a maximum length greater than zero:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inside run_{username}ContigFilter_max(), after #BEGIN run_{username}ContigFilter_max, before any other code</span>
@@ -396,15 +317,15 @@ We can add some additional tests to make sure we raise ValueErrors for invalid p
 </pre></div>
 </div>
 <p>Testing for invalid max_length is left as an exercise for the student.</p>
-</div>
-<div class="section" id="download-the-fasta-file">
-<h2>7.5. Download the FASTA file<a class="headerlink" href="#download-the-fasta-file" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="download-the-fasta-file">
+<h2><span class="section-number">7.5. </span>Download the FASTA file<a class="headerlink" href="#download-the-fasta-file" title="Link to this heading"></a></h2>
 <p>Back to the  <code class="docutils literal notranslate"><span class="pre">method_nameImpl.py</span></code> file.</p>
 <p>Inside your <code class="docutils literal notranslate"><span class="pre">run_{username}ContigFilter_max</span></code> method, initialize the utility and use it to download the <code class="docutils literal notranslate"><span class="pre">assembly_ref</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inside run_{username}ContigFilter_max()</span>
 <span class="n">assembly_util</span> <span class="o">=</span> <span class="n">AssemblyUtil</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">callback_url</span><span class="p">)</span>
 <span class="n">fasta_file</span> <span class="o">=</span> <span class="n">assembly_util</span><span class="o">.</span><span class="n">get_assembly_as_fasta</span><span class="p">({</span><span class="s1">&#39;ref&#39;</span><span class="p">:</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;assembly_ref&#39;</span><span class="p">]})</span>
-<span class="k">print</span><span class="p">(</span><span class="n">fasta_file</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fasta_file</span><span class="p">)</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -412,9 +333,9 @@ We can add some additional tests to make sure we raise ValueErrors for invalid p
 <li><p>The <code class="docutils literal notranslate"><span class="pre">get_assembly_as_fasta</span></code> method downloads a file from a workspace ref</p></li>
 </ul>
 <p>Run <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> again and you should see the file download along with its path in the container.</p>
-</div>
-<div class="section" id="filter-out-contigs-based-on-length">
-<h2>7.6. Filter out contigs based on length<a class="headerlink" href="#filter-out-contigs-based-on-length" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="filter-out-contigs-based-on-length">
+<h2><span class="section-number">7.6. </span>Filter out contigs based on length<a class="headerlink" href="#filter-out-contigs-based-on-length" title="Link to this heading"></a></h2>
 <p>Now we can finally start to implement the real functionality of the app!</p>
 <p>The biopython package (<a href="http://biopython.org/" target="_blank">http://biopython.org/</a> ), included in the SDK build, has a module called SeqIO ( <a href="http://biopython.org/wiki/SeqIO" target="_blank">http://biopython.org/wiki/SeqIO</a> ) that can help us read and filter genome sequence data.</p>
 <p>This module should already be included in the module’s <code class="docutils literal notranslate"><span class="pre">{username}ContigFilterImpl.py</span></code> between the header comments like so:</p>
@@ -447,9 +368,9 @@ We can add some additional tests to make sure we raise ValueErrors for invalid p
 </pre></div>
 </div>
 <p>Run <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> again and check the output.</p>
-</div>
-<div class="section" id="add-real-tests">
-<h2>7.7. Add real tests<a class="headerlink" href="#add-real-tests" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="add-real-tests">
+<h2><span class="section-number">7.7. </span>Add real tests<a class="headerlink" href="#add-real-tests" title="Link to this heading"></a></h2>
 <p>Return to <code class="docutils literal notranslate"><span class="pre">test/{username}ContigFilterImpl_server_test.py</span></code> and add tests for the functionality we just added above.</p>
 <p>Set <code class="docutils literal notranslate"><span class="pre">min_length</span></code> to a value that filters out some contigs but not others. In our case, our FASTA only has 2 sequences of lengths 4,969,811 and 161,613. An in-between minimum could be 200,000. To test the upper end, a minimum could be 100,000 and a maximum could be 400,000</p>
 <p>We would expect to keep 1 contig and filter out the other.</p>
@@ -480,9 +401,9 @@ We can add some additional tests to make sure we raise ValueErrors for invalid p
 </pre></div>
 </div>
 <p>Run <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> again to make sure it all passes.</p>
-</div>
-<div class="section" id="output-the-filtered-assembly">
-<h2>7.8. Output the filtered assembly<a class="headerlink" href="#output-the-filtered-assembly" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="output-the-filtered-assembly">
+<h2><span class="section-number">7.8. </span>Output the filtered assembly<a class="headerlink" href="#output-the-filtered-assembly" title="Link to this heading"></a></h2>
 <p>Next, we want to save and upload a new version of our genome assembly data with the contigs filtered out.</p>
 <p>Beneath the code that we wrote to filter the assembly, add this file saving and uploading code.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Underneath your loop that filters contigs:</span>
@@ -509,12 +430,12 @@ We can add some additional tests to make sure we raise ValueErrors for invalid p
 </pre></div>
 </div>
 <p>Run <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> again to make sure you have no errors</p>
-</div>
-<div class="section" id="build-a-report-object">
-<h2>7.9. Build a report object<a class="headerlink" href="#build-a-report-object" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="build-a-report-object">
+<h2><span class="section-number">7.9. </span>Build a report object<a class="headerlink" href="#build-a-report-object" title="Link to this heading"></a></h2>
 <p>In order to output data into the UI inside a narrative, your app needs to build and return a KBaseReport ( <a href="https://github.com/kbaseapps/KBaseReport" target="_blank">https://github.com/kbaseapps/KBaseReport</a> ).</p>
 <p>The following  KBaseReport app should be installed already:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kb-sdk install KBaseReport
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>kb-sdk<span class="w"> </span>install<span class="w"> </span>KBaseReport
 </pre></div>
 </div>
 <p>Import the report module should be between the <code class="docutils literal notranslate"><span class="pre">#BEGIN_HEADER</span></code> and <code class="docutils literal notranslate"><span class="pre">#END_HEADER</span></code> section of your <code class="docutils literal notranslate"><span class="pre">{username}ContigFilterImpl.py</span></code> file:</p>
@@ -560,9 +481,9 @@ We can add some additional tests to make sure we raise ValueErrors for invalid p
 </pre></div>
 </div>
 <p>Run <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> again to make sure it all works.</p>
-</div>
-<div class="section" id="configure-your-app-s-output-data">
-<h2>7.10. Configure your app’s output data<a class="headerlink" href="#configure-your-app-s-output-data" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="configure-your-app-s-output-data">
+<h2><span class="section-number">7.10. </span>Configure your app’s output data<a class="headerlink" href="#configure-your-app-s-output-data" title="Link to this heading"></a></h2>
 <p>We nearly have a complete app. The last step has already been added to our “ContigFilter” module. If starting from a blank template, you would take all the result data we defined in <code class="docutils literal notranslate"><span class="pre">{username}ContigFilterImpl#run_{username}ContigFilter_max</span></code> and add entries for them in our <code class="docutils literal notranslate"><span class="pre">{username}ContigFilter.spec</span></code> KIDL type file as well as our <code class="docutils literal notranslate"><span class="pre">spec.json</span></code> UI config file.</p>
 <p>If not there already, add a type entry for our result data in our KIDL file:</p>
 <p>Run <code class="docutils literal notranslate"><span class="pre">make</span></code> and <code class="docutils literal notranslate"><span class="pre">kb-sdk</span> <span class="pre">test</span></code> again to make sure everything works.</p>
@@ -603,56 +524,38 @@ We can add some additional tests to make sure we raise ValueErrors for invalid p
 <li><p>Change <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">my_test_run_{username}ContigFilter_err1(self)</span></code> to <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">test_run_{username}ContigFilter_err1(self)</span></code></p></li>
 <li><p>Change <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">my_test_run_{username}ContigFilter_err2(self)</span></code> to <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">test_run_{username}ContigFilter_err2(self)</span></code></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="8_publish.html" class="btn btn-neutral float-right" title="8. Publish and Update" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="6_inputsoutputs.html" class="btn btn-neutral float-left" title="6. Narrative User Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="6_inputsoutputs.html" class="btn btn-neutral float-left" title="6. Narrative User Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="8_publish.html" class="btn btn-neutral float-right" title="8. Publish and Update" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Narrative App UI Specification &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Terminology" href="terminology.html" />
     <link rel="prev" title="KIDL Specification" href="KIDL_spec.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,74 +96,34 @@
 <li class="toctree-l1"><a class="reference internal" href="terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Narrative App UI Specification</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Narrative App UI Specification</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/references/UI_spec.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="narrative-app-ui-specification">
-<h1><a class="toc-backref" href="#id3">Narrative App UI Specification</a><a class="headerlink" href="#narrative-app-ui-specification" title="Permalink to this headline">¶</a></h1>
-<div class="contents topic" id="contents">
-<p class="topic-title first">Contents</p>
+             
+  <section id="narrative-app-ui-specification">
+<h1><a class="toc-backref" href="#id3" role="doc-backlink">Narrative App UI Specification</a><a class="headerlink" href="#narrative-app-ui-specification" title="Link to this heading"></a></h1>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#narrative-app-ui-specification" id="id3">Narrative App UI Specification</a></p>
 <ul>
@@ -228,275 +149,275 @@
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <p>This document describes how the UI components of Narrative Apps are specified via fields in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code> and <code class="docutils literal notranslate"><span class="pre">display.yaml</span></code> files. These spec files include input and output parameters for the app.</p>
-<div class="section" id="structure-of-the-folders-and-files">
-<h2><a class="toc-backref" href="#id4">Structure of the folders and files</a><a class="headerlink" href="#structure-of-the-folders-and-files" title="Permalink to this headline">¶</a></h2>
+<section id="structure-of-the-folders-and-files">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Structure of the folders and files</a><a class="headerlink" href="#structure-of-the-folders-and-files" title="Link to this heading"></a></h2>
 <p>In an SDK app’s repo, all UI method specifications live in the <code class="docutils literal notranslate"><span class="pre">ui/narrative/methods/</span></code> directory. Each method has its own subfolder with the name corresponding to the app or method ID. Inside this folder, a typical method has a <code class="docutils literal notranslate"><span class="pre">spec.json</span></code> file defining input/output parameters, a <code class="docutils literal notranslate"><span class="pre">display.yaml</span></code> file defining display text, and an <code class="docutils literal notranslate"><span class="pre">img</span></code> subfolder containing icon and screenshot files.</p>
-</div>
-<div class="section" id="structural-file-spec-json">
-<h2><a class="toc-backref" href="#id5">Structural file: <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#structural-file-spec-json" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="structural-file-spec-json">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Structural file: <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#structural-file-spec-json" title="Link to this heading"></a></h2>
 <p>This is a file in JSON format containing these top-level properties:</p>
 <dl class="field-list simple">
-<dt class="field-odd">ver</dt>
+<dt class="field-odd">ver<span class="colon">:</span></dt>
 <dd class="field-odd"><p>version of each UI method-spec</p>
 </dd>
-<dt class="field-even">authors</dt>
+<dt class="field-even">authors<span class="colon">:</span></dt>
 <dd class="field-even"><p>list of GlobusOnline accounts of the contributors</p>
 </dd>
-<dt class="field-odd">contact</dt>
+<dt class="field-odd">contact<span class="colon">:</span></dt>
 <dd class="field-odd"><p>e-mail of the contact person</p>
 </dd>
-<dt class="field-even">categories</dt>
+<dt class="field-even">categories<span class="colon">:</span></dt>
 <dd class="field-even"><p>list of tags (from fixed set of supported tags) categorizing this method into
 method should be made invisible, then the <code class="docutils literal notranslate"><span class="pre">inactive</span></code> category should be added to this list (in
 place of the <code class="docutils literal notranslate"><span class="pre">active</span></code> category, if it’s present)</p>
 </dd>
-<dt class="field-odd">widgets</dt>
+<dt class="field-odd">widgets<span class="colon">:</span></dt>
 <dd class="field-odd"><p>structure defining <strong>input</strong> and <strong>output</strong> widgets. Typically the <strong>input</strong> widget is
 set to null, meaning that the standard one is used. The <strong>output</strong> widget is frequently
 the name of JavaScript viewer for the output object. See the <a href="https://github.com/kbase/narrative/tree/develop/kbase-extension/static/kbase/js/widgets" target="_blank">Narrative module widgets</a>
 and its subdirectories for more widgets.</p>
 </dd>
-<dt class="field-even">parameters</dt>
+<dt class="field-even">parameters<span class="colon">:</span></dt>
 <dd class="field-even"><p>list of structures (described below) defining each parameter type and other features, except</p>
 </dd>
-<dt class="field-odd">behavior</dt>
+<dt class="field-odd">behavior<span class="colon">:</span></dt>
 <dd class="field-odd"><p>block of settings for mapping UI parameters to service function input parameters. Also
 used for mapping output results returned from the service function to the input of the
 visualizing widget that shows the results.</p>
 </dd>
-<dt class="field-even">job_id_output_field</dt>
+<dt class="field-even">job_id_output_field<span class="colon">:</span></dt>
 <dd class="field-even"><p>field for support of legacy code. For an SDK method, it should always be set
 to the <code class="docutils literal notranslate"><span class="pre">docker</span></code> value</p>
 </dd>
 </dl>
-<div class="section" id="parameters-in-spec-json">
-<h3><a class="toc-backref" href="#id6">Parameters in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#parameters-in-spec-json" title="Permalink to this headline">¶</a></h3>
+<section id="parameters-in-spec-json">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Parameters in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#parameters-in-spec-json" title="Link to this heading"></a></h3>
 <p>Each item in the <code class="docutils literal notranslate"><span class="pre">parameters</span></code> array defines one parameter shown in the UI input panel of this method. The properties of each item are:</p>
 <dl class="field-list simple">
-<dt class="field-odd">id</dt>
+<dt class="field-odd">id<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ID of a parameter, allowing you to reference it in <code class="docutils literal notranslate"><span class="pre">display.yaml</span></code> and from the mapping
 settings of the <code class="docutils literal notranslate"><span class="pre">behavior</span></code> block</p>
 </dd>
-<dt class="field-even">optional</dt>
+<dt class="field-even">optional<span class="colon">:</span></dt>
 <dd class="field-even"><p>flag defining whether the UI interface allows an empty value for this parameter or
 requires the field to be set to something non-empty</p>
 </dd>
-<dt class="field-odd">advanced</dt>
+<dt class="field-odd">advanced<span class="colon">:</span></dt>
 <dd class="field-odd"><p>flag defining whether the UI interface should place this field in the “Advanced
 Parameters” group, collapsed by default</p>
 </dd>
-<dt class="field-even">allow_multiple</dt>
+<dt class="field-even">allow_multiple<span class="colon">:</span></dt>
 <dd class="field-even"><p>flag defining whether the UI interface allows you to define more than one value
 for this parameter, treating these values as a list rather than a single
 textual/numeric/boolean value</p>
 </dd>
-<dt class="field-odd">default_values</dt>
+<dt class="field-odd">default_values<span class="colon">:</span></dt>
 <dd class="field-odd"><p>if set to any non-empty string, this field will be preset with the string</p>
 </dd>
-<dt class="field-even">valid_file_types</dt>
+<dt class="field-even">valid_file_types<span class="colon">:</span></dt>
 <dd class="field-even"><p>a list of staging area file types that are valid for the method
 parameter. This might apply to a text box, dropdown, dynamic dropdown, etc.
 depending on the context. The file type is available in the <code class="docutils literal notranslate"><span class="pre">fileinfo</span></code> key of
 the json response from staging service importer mappings endpoint. Each mapping
 has a <code class="docutils literal notranslate"><span class="pre">file_type_ext</span></code> key containing the type.</p>
 </dd>
-<dt class="field-odd">field_type</dt>
+<dt class="field-odd">field_type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>type of the parameter; could be one of <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">dropdown</span></code>, <code class="docutils literal notranslate"><span class="pre">checkbox</span></code>,
 <code class="docutils literal notranslate"><span class="pre">textarea</span></code>, <code class="docutils literal notranslate"><span class="pre">textsubdata</span></code>, or <code class="docutils literal notranslate"><span class="pre">dynamic_dropdown</span></code></p>
 </dd>
-<dt class="field-even">text_options</dt>
+<dt class="field-even">text_options<span class="colon">:</span></dt>
 <dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">text</span></code> type</p>
 </dd>
-<dt class="field-odd">dropdown_options</dt>
+<dt class="field-odd">dropdown_options<span class="colon">:</span></dt>
 <dd class="field-odd"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">dropdown</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-even">checkbox_options</dt>
+<dt class="field-even">checkbox_options<span class="colon">:</span></dt>
 <dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">checkbox</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/simulate_growth_on_phenotype_data/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-odd">textarea_options</dt>
+<dt class="field-odd">textarea_options<span class="colon">:</span></dt>
 <dd class="field-odd"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">textarea</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_multiple_metabolic_models/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-even">textsubdata_options</dt>
+<dt class="field-even">textsubdata_options<span class="colon">:</span></dt>
 <dd class="field-even"><p>optional block defining details of the <code class="docutils literal notranslate"><span class="pre">textsubdata</span></code> type -  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/compare_flux_with_expression/spec.json" target="_blank">Example</a></p>
 </dd>
 </dl>
-</div>
-<div class="section" id="options-for-the-text-parameter-type-in-spec-json">
-<h3><a class="toc-backref" href="#id7">Options for the text parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-text-parameter-type-in-spec-json" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="options-for-the-text-parameter-type-in-spec-json">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Options for the text parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-text-parameter-type-in-spec-json" title="Link to this heading"></a></h3>
 <p>Options in the <code class="docutils literal notranslate"><span class="pre">text_options</span></code> block allow you to specify many different types of validation and behavior. Fields named <code class="docutils literal notranslate"><span class="pre">valid_ws_types</span></code> connect a parameter with one or more types of objects stored in the Workspace. In this mode, the narrative will show the available objects as drop-down options. For instance, the following is an example of <code class="docutils literal notranslate"><span class="pre">text_options</span></code>,
 allowing you to choose one of the Genome objects stored in the Workspace:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span> <span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;valid_ws_types&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;KBaseGenomes.Genome&quot;</span> <span class="p">]</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;valid_ws_types&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;KBaseGenomes.Genome&quot;</span><span class="w"> </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>If you would like to mark this parameter as output, meaning the UI interface shouldn’t require
 the chosen object to be present in Workspace storage, then you can set the <code class="docutils literal notranslate"><span class="pre">is_output_name</span></code> sub-option to
 true:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span> <span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;valid_ws_types&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;KBaseGenomes.Genome&quot;</span> <span class="p">],</span>
-    <span class="s2">&quot;is_output_name&quot;</span> <span class="o">:</span> <span class="kc">true</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;valid_ws_types&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;KBaseGenomes.Genome&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;is_output_name&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>Another sub-option is <code class="docutils literal notranslate"><span class="pre">validate_as</span></code>, allowing you to validate a value entered in the UI as an <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>. If
 you want a parameter to be an integer with minimum and/or maximum limits you can use additional properties, as in this example:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span> <span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;valid_ws_types&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
-    <span class="s2">&quot;validate_as&quot;</span><span class="o">:</span> <span class="s2">&quot;int&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;min_int&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s2">&quot;max_int&quot;</span> <span class="o">:</span> <span class="mi">200</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;valid_ws_types&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;validate_as&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;min_int&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;max_int&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">200</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>And similarly for float types:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span> <span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;valid_ws_types&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
-    <span class="s2">&quot;validate_as&quot;</span><span class="o">:</span> <span class="s2">&quot;float&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;min_float&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s2">&quot;max_float&quot;</span> <span class="o">:</span> <span class="mi">200</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text_options&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;valid_ws_types&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;validate_as&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;float&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;min_float&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;max_float&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">200</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="options-for-the-drop-down-parameter-type-in-spec-json">
-<h3><a class="toc-backref" href="#id8">Options for the drop-down parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-drop-down-parameter-type-in-spec-json" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="options-for-the-drop-down-parameter-type-in-spec-json">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Options for the drop-down parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-drop-down-parameter-type-in-spec-json" title="Link to this heading"></a></h3>
 <p>There is only one sub-option available inside the <code class="docutils literal notranslate"><span class="pre">dropdown_options</span></code> block: the <code class="docutils literal notranslate"><span class="pre">options</span></code> property whose value should be set to a list of objects defining drop-down items. Each object should have two properties: <code class="docutils literal notranslate"><span class="pre">value</span></code> defining an internal item ID (sent to the back-end function when the given item is selected); and the <code class="docutils literal notranslate"><span class="pre">display</span></code> property, which defines text shown for this item in the UI. The following is an example of the “dropdown_options” block:</p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dropdown_options&quot;</span><span class="o">:</span><span class="p">{</span>
-    <span class="s2">&quot;options&quot;</span><span class="o">:</span> <span class="p">[{</span>
-        <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="s2">&quot;lloyd&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;display&quot;</span><span class="o">:</span> <span class="s2">&quot;Lloyd&quot;</span>
-    <span class="p">},</span> <span class="p">{</span>
-        <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="s2">&quot;hartigan_wong&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;display&quot;</span><span class="o">:</span> <span class="s2">&quot;Hartigan-Wong&quot;</span>
-    <span class="p">},</span> <span class="p">{</span>
-        <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="s2">&quot;forgy&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;display&quot;</span><span class="o">:</span> <span class="s2">&quot;Forgy&quot;</span>
-    <span class="p">},</span> <span class="p">{</span>
-        <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="s2">&quot;mac_queen&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;display&quot;</span><span class="o">:</span> <span class="s2">&quot;MacQueen&quot;</span>
-    <span class="p">}]</span>
+<span class="w">    </span><span class="s2">&quot;options&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span>
+<span class="w">        </span><span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;lloyd&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;display&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Lloyd&quot;</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;hartigan_wong&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;display&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hartigan-Wong&quot;</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;forgy&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;display&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Forgy&quot;</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;mac_queen&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;display&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;MacQueen&quot;</span>
+<span class="w">    </span><span class="p">}]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="options-for-the-checkbox-parameter-type-in-spec-json">
-<h3><a class="toc-backref" href="#id9">Options for the checkbox parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-checkbox-parameter-type-in-spec-json" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="options-for-the-checkbox-parameter-type-in-spec-json">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Options for the checkbox parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-checkbox-parameter-type-in-spec-json" title="Link to this heading"></a></h3>
 <p>The following is the list of sub-options available inside <code class="docutils literal notranslate"><span class="pre">checkbox_options</span></code> block:</p>
 <dl class="field-list simple">
-<dt class="field-odd">checked_value</dt>
+<dt class="field-odd">checked_value<span class="colon">:</span></dt>
 <dd class="field-odd"><p>defines the value to be sent to a service function when the checkbox is selected</p>
 </dd>
-<dt class="field-even">unchecked_value</dt>
+<dt class="field-even">unchecked_value<span class="colon">:</span></dt>
 <dd class="field-even"><p>defines the value to be sent to a service function when the checkbox is not
 selected</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="options-for-the-textarea-parameter-type-in-spec-json">
-<h3><a class="toc-backref" href="#id10">Options for the textarea parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-textarea-parameter-type-in-spec-json" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="options-for-the-textarea-parameter-type-in-spec-json">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Options for the textarea parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-textarea-parameter-type-in-spec-json" title="Link to this heading"></a></h3>
 <p>There is only one sub-option available inside the <code class="docutils literal notranslate"><span class="pre">textarea_options</span></code> block:</p>
 <dl class="field-list simple">
-<dt class="field-odd">n_rows</dt>
+<dt class="field-odd">n_rows<span class="colon">:</span></dt>
 <dd class="field-odd"><p>defines the number of lines shown for this textarea in the UI.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="options-for-the-textsubdata-parameter-type-in-spec-json">
-<h3><a class="toc-backref" href="#id11">Options for the textsubdata parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-textsubdata-parameter-type-in-spec-json" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="options-for-the-textsubdata-parameter-type-in-spec-json">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Options for the textsubdata parameter type in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-textsubdata-parameter-type-in-spec-json" title="Link to this heading"></a></h3>
 <p>This parameter type allows you to select items that are parts of the workspace object (let’s call them
 sub-objects). The following is the list of sub-options available inside the <code class="docutils literal notranslate"><span class="pre">textsubdata_options</span></code> block:</p>
 <dl class="field-list simple">
-<dt class="field-odd">multiselection</dt>
+<dt class="field-odd">multiselection<span class="colon">:</span></dt>
 <dd class="field-odd"><p>flag (boolean) allowing to have more than one selected object</p>
 </dd>
-<dt class="field-even">show_src_obj</dt>
+<dt class="field-even">show_src_obj<span class="colon">:</span></dt>
 <dd class="field-even"><p>flag (boolean) shows the name of a workspace object where we are selecting
 sub-objects</p>
 </dd>
-<dt class="field-odd">allow_custom</dt>
+<dt class="field-odd">allow_custom<span class="colon">:</span></dt>
 <dd class="field-odd"><p>flag (boolean) allow the user to enter values which are not present in the source
 object</p>
 </dd>
-<dt class="field-even">subdata_selection</dt>
+<dt class="field-even">subdata_selection<span class="colon">:</span></dt>
 <dd class="field-even"><p>main block with selection options (see below)</p>
 </dd>
 </dl>
 <p>Options under <code class="docutils literal notranslate"><span class="pre">subdata_section</span></code>:</p>
 <dl class="field-list simple">
-<dt class="field-odd">path_to_subdata</dt>
+<dt class="field-odd">path_to_subdata<span class="colon">:</span></dt>
 <dd class="field-odd"><p>JSON-path leading to the level of a of sub-object (this should be an array of
 property names). To access a second workspace object that is referenced from the
 primary object, use the special term “&lt;WSREF&gt;” in this path. The path following
 this point will be in the second object. For an example see the <a href="https://github.com/cshenry/fba_tools/blob/9e7daee7bdea79961a64c2d981036354e6ba8c45/ui/narrative/methods/run_flux_balance_analysis/spec.json#L183-L187" target="_blank">Run FBA UI</a></p>
 </dd>
-<dt class="field-even">subdata_included</dt>
+<dt class="field-even">subdata_included<span class="colon">:</span></dt>
 <dd class="field-even"><p>list of string JSON-paths to be loaded (in case the JSON-path leads to a certain
 field inside the sub-objects, then the level of array of sub-objects is denoted
 as [*])</p>
 </dd>
-<dt class="field-odd">constant_ref</dt>
+<dt class="field-odd">constant_ref<span class="colon">:</span></dt>
 <dd class="field-odd"><p>static reference to some object in the public workspace (alternative to the
 <strong>parameter_id</strong>)</p>
 </dd>
-<dt class="field-even">parameter_id</dt>
+<dt class="field-even">parameter_id<span class="colon">:</span></dt>
 <dd class="field-even"><p>points to the ID of another UI parameter used to select a workspace object where we
 are selecting sub-objects</p>
 </dd>
-<dt class="field-odd">selection_id</dt>
+<dt class="field-odd">selection_id<span class="colon">:</span></dt>
 <dd class="field-odd"><p>name of the field of the sub-object which will be sent as a selected value</p>
 </dd>
-<dt class="field-even">selection_description</dt>
+<dt class="field-even">selection_description<span class="colon">:</span></dt>
 <dd class="field-even"><p>list of fields of the sub-object to be shown for each selectable item</p>
 </dd>
-<dt class="field-odd">description_template</dt>
+<dt class="field-odd">description_template<span class="colon">:</span></dt>
 <dd class="field-odd"><p>optional template defining the representation of fields from
 <code class="docutils literal notranslate"><span class="pre">selection_description</span></code> (placeholders for the fields are defined as
 {{field-name}})</p>
 </dd>
 </dl>
 <p>The following is an example of the <code class="docutils literal notranslate"><span class="pre">textsubdata_options</span></code> block for the model reactions in the <code class="docutils literal notranslate"><span class="pre">KBaseFBA.FBAModel</span></code> object:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;textsubdata_options&quot;</span> <span class="o">:</span> <span class="p">{</span>
-   <span class="s2">&quot;subdata_selection&quot;</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">&quot;parameter_id&quot;</span> <span class="o">:</span> <span class="s2">&quot;input_model&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;subdata_included&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;modelcompounds/[*]/id&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;modelcompounds/[*]/name&quot;</span><span class="p">,</span><span class="s2">&quot;modelcompounds/[*]/formula&quot;</span><span class="p">],</span>
-      <span class="s2">&quot;path_to_subdata&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;modelcompounds&quot;</span><span class="p">],</span>
-      <span class="s2">&quot;selection_id&quot;</span> <span class="o">:</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;selection_description&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">,</span><span class="s2">&quot;formula&quot;</span><span class="p">],</span>
-      <span class="s2">&quot;description_template&quot;</span> <span class="o">:</span><span class="s2">&quot;- {{name}} ({{formula}})&quot;</span>
-  <span class="p">},</span>
-  <span class="s2">&quot;multiselection&quot;</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
-  <span class="s2">&quot;show_src_obj&quot;</span><span class="o">:</span><span class="kc">false</span><span class="p">,</span>
-  <span class="s2">&quot;allow_custom&quot;</span><span class="o">:</span><span class="kc">false</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;textsubdata_options&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="s2">&quot;subdata_selection&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;parameter_id&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;input_model&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;subdata_included&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;modelcompounds/[*]/id&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;modelcompounds/[*]/name&quot;</span><span class="p">,</span><span class="s2">&quot;modelcompounds/[*]/formula&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="s2">&quot;path_to_subdata&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;modelcompounds&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="s2">&quot;selection_id&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;id&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;selection_description&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">,</span><span class="s2">&quot;formula&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="s2">&quot;description_template&quot;</span><span class="w"> </span><span class="o">:</span><span class="s2">&quot;- {{name}} ({{formula}})&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="s2">&quot;multiselection&quot;</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;show_src_obj&quot;</span><span class="o">:</span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;allow_custom&quot;</span><span class="o">:</span><span class="kc">false</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="options-for-the-dynamic-dropdown-in-spec-json">
-<h3><a class="toc-backref" href="#id12">Options for the dynamic_dropdown in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-dynamic-dropdown-in-spec-json" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="options-for-the-dynamic-dropdown-in-spec-json">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Options for the dynamic_dropdown in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#options-for-the-dynamic-dropdown-in-spec-json" title="Link to this heading"></a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">dynamic_dropdown</span></code> parameter type defines a field that gives the user an autocomplete
 dropdown, where the options in the dropdown can be dynamic (usually based on the results of
 a service call). For instance, you might have a selection of files where the options are from
 the staging_service or from kbase_search. The parameter appears as a text field with a dropdown
 similar to the selection of other WS data objects.</p>
 <dl class="field-list">
-<dt class="field-odd">data_source</dt>
+<dt class="field-odd">data_source<span class="colon">:</span></dt>
 <dd class="field-odd"><p>One of <code class="docutils literal notranslate"><span class="pre">ftp_staging</span></code>, <code class="docutils literal notranslate"><span class="pre">search</span></code>, or <code class="docutils literal notranslate"><span class="pre">custom</span></code>. Provides sensible defaults for the
 following parameters for a common type of dropdown that can be overwritten.</p>
 </dd>
-<dt class="field-even">service_function</dt>
+<dt class="field-even">service_function<span class="colon">:</span></dt>
 <dd class="field-even"><p>Name of the SDK method, including an SDK module prefix, started up as a dynamic
 service (this needs to be the fully qualified method name, such as
 <code class="docutils literal notranslate"><span class="pre">&quot;ModuleName.method_name&quot;</span></code>).</p>
 </dd>
-<dt class="field-odd">service_version</dt>
+<dt class="field-odd">service_version<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Optional version of the module used in the service_function (the default value is
 ‘release’).</p>
 </dd>
-<dt class="field-even">service_params</dt>
+<dt class="field-even">service_params<span class="colon">:</span></dt>
 <dd class="field-even"><p>The parameters supplied to the dynamic service call as JSON. The special text
 <code class="docutils literal notranslate"><span class="pre">&quot;{{dynamic_dropdown_input}}&quot;</span></code> will be replaced by the value from the user input
 at call time.</p>
@@ -516,40 +437,40 @@ service can filter results based on whether an argument is passed as <code class
 Your app already contains a static dropdown that maps to an id of <code class="docutils literal notranslate"><span class="pre">foo_or_bar</span></code>,
 so it’s convenient to pass this argument to the service that populates your
 dynamic dropdown. Below is an example of how this works.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>&quot;parameters&quot;: [
-    {
-        &quot;id&quot;: &quot;foo_or_bar&quot;,
-        &quot;field_type&quot;: &quot;dropdown&quot;,
-        &quot;dropdown_options&quot;: {
-            &quot;options&quot;: [
-                {
-                    &quot;value&quot;: &quot;foo&quot;,
-                    &quot;display&quot;: &quot;Foo&quot;
-                },
-                {
-                    &quot;value&quot;: &quot;bar&quot;,
-                    &quot;display&quot;: &quot;Bar&quot;
-                }
-            ]
-        }
-    },
-    {
-        &quot;id&quot;: &quot;dynamic_search_example&quot;,
-        &quot;field_type&quot;: &quot;dynamic_dropdown&quot;,
-        &quot;dynamic_dropdown_options&quot;: {
-            &quot;data_source&quot;: &quot;custom&quot;,
-            &quot;service_function&quot;: &quot;ExampleService.search_based_on_foo_or_bar&quot;,
-            &quot;service_params&quot;: [
-                {
-                    &quot;filter_with&quot;: &quot;{{foo_or_bar}}&quot;,
-                    &quot;search_text&quot;: &quot;{{dynamic_dropdown_input}}&quot;
-                }
-            ],
-            &quot;selection_id&quot;: &quot;result&quot;,
-            &quot;description_template&quot;: &quot;{{result}}&quot;
-        }
-    }
-]
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;foo_or_bar&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dropdown&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;dropdown_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;display&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Foo&quot;</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;display&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bar&quot;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dynamic_search_example&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dynamic_dropdown&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;dynamic_dropdown_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;data_source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;custom&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;service_function&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ExampleService.search_based_on_foo_or_bar&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;service_params&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;filter_with&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{foo_or_bar}}&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;search_text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{dynamic_dropdown_input}}&quot;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;selection_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;result&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;description_template&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{result}}&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>When the user interacts with the dynamic dropdown, <code class="docutils literal notranslate"><span class="pre">{{foo_or_bar}}</span></code> will be replaced
@@ -558,35 +479,37 @@ replaced with their actual search text. You can use these dynamic variables inte
 or independently. See the <a href="https://github.com/kbaseapps/sample_uploader/blob/3d954d6cf4a11fd17c4aa9ddeac7e31c3752426a/ui/narrative/methods/filter_samplesets/spec.json#L70" target="_blank">Sample Uploader app</a> for an example of a spec.json that uses
 an app argument by itself to populate a dynamic dropdown.</p>
 <dl class="field-list simple">
-<dt class="field-odd">selection_id</dt>
+<dt class="field-odd">selection_id<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The value of this key will be extracted from the item selected by the
 user. The item is expected to be represented as a map.</p>
 </dd>
-<dt class="field-even">exact_match_on</dt>
-<dd class="field-even"><p>if exactly matching the user’s input to the results from the dynamic
-service is required, this field contains the name of the key in
-the results document that contains the value to which the user’s
-input should be matched. May or may not be the same key as
-<code class="docutils literal notranslate"><span class="pre">selection_id</span></code>.</p>
+<dt class="field-even">exact_match_on<span class="colon">:</span></dt>
+<dd class="field-even"><p>This field has two purposes: 1) If exactly matching the user’s input to the
+results from the dynamic service is required, this field contains the name of
+the key in the results document that contains the value to which the user’s
+input should be matched. May or may not be the same key as <code class="docutils literal notranslate"><span class="pre">selection_id</span></code>.
+2) Determines what should be returned when the user requests the contents of
+the dropdown be moved to the clipboard (e.g. a copy). The value of the key
+specified by <code class="docutils literal notranslate"><span class="pre">exact_match_on</span></code> in the results document will be returned.</p>
 </dd>
-<dt class="field-odd">description_template</dt>
+<dt class="field-odd">description_template<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Defines how the description of items are rendered using Handlebar templates
 (use the keys in items as variable names).</p>
 </dd>
-<dt class="field-even">multiselection</dt>
+<dt class="field-even">multiselection<span class="colon">:</span></dt>
 <dd class="field-even"><p>If true, then multiple selections are allowed in a single input field. This will
 override the <code class="docutils literal notranslate"><span class="pre">allow_multiple</span></code> option (which allows user addition) of additional
 fields. If true, then this parameter will return a list. Defaults to false.</p>
 </dd>
-<dt class="field-odd">query_on_empty_input</dt>
+<dt class="field-odd">query_on_empty_input<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">true</span></code>, the default, to send a request to the dynamic service even
 if there is no input.</p>
 </dd>
-<dt class="field-even">result_array_index</dt>
+<dt class="field-even">result_array_index<span class="colon">:</span></dt>
 <dd class="field-even"><p>The index of the result array returned from the dynamic service
 from where the selection items will be extracted. Default 0.</p>
 </dd>
-<dt class="field-odd">path_to_selection_items</dt>
+<dt class="field-odd">path_to_selection_items<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The path into the result data object to the list of
 selection items. If missing, the data at the specified result array
 index is used (defaulting to the first returned value in the list).</p>
@@ -596,22 +519,22 @@ index is used (defaulting to the first returned value in the list).</p>
 <p>As an example of correctly specifying where the selection items are within the
 data structure returned from the dynamic service, if the data structure is:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;return-array-element-0&quot;</span><span class="p">,</span>
-    <span class="p">{</span>
-     <span class="nt">&quot;interesting_data&quot;</span><span class="p">:</span>
-        <span class="p">[</span>
-            <span class="s2">&quot;baz&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;boo&quot;</span><span class="p">,</span>
-            <span class="p">[</span>
-                <span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;foo&quot;</span><span class="p">},</span>
-                <span class="p">{</span><span class="nt">&quot;...more items&quot;</span><span class="p">:</span> <span class="s2">&quot;go here...&quot;</span><span class="p">},</span>
-                <span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;wowbagger&quot;</span><span class="p">}</span>
-            <span class="p">],</span>
-            <span class="s2">&quot;bat&quot;</span>
-         <span class="p">]</span>
-     <span class="p">},</span>
-     <span class="s2">&quot;return-array-element-2&quot;</span>
- <span class="p">]</span>
+<span class="w">    </span><span class="s2">&quot;return-array-element-0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">     </span><span class="nt">&quot;interesting_data&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;baz&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;boo&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="nt">&quot;...more items&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;go here...&quot;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wowbagger&quot;</span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="s2">&quot;bat&quot;</span>
+<span class="w">         </span><span class="p">]</span>
+<span class="w">     </span><span class="p">},</span>
+<span class="w">     </span><span class="s2">&quot;return-array-element-2&quot;</span>
+<span class="w"> </span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Note that KBase dynamic services all return an array of values, even for single-value
@@ -624,9 +547,9 @@ returns, as the KIDL spec allows specifying multiple return values per function.
 </ul>
 <p>The selection items would be the 42 items represented by</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-  <span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;foo&quot;</span><span class="p">},</span>
-  <span class="p">{</span><span class="nt">&quot;...more items&quot;</span><span class="p">:</span> <span class="s2">&quot;go here...&quot;</span><span class="p">},</span>
-  <span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;wowbagger&quot;</span><span class="p">}</span>
+<span class="w">  </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="nt">&quot;...more items&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;go here...&quot;</span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wowbagger&quot;</span><span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -635,172 +558,172 @@ returns, as the KIDL spec allows specifying multiple return values per function.
 <code class="docutils literal notranslate"><span class="pre">foo</span></code> if the first item is selected, and <code class="docutils literal notranslate"><span class="pre">wowbagger</span></code> if the last item is selected.</p>
 <p>Here is an example for taxon search:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;scientific_name&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;optional&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-  <span class="nt">&quot;advanced&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-  <span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-  <span class="nt">&quot;default_values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">],</span>
-  <span class="nt">&quot;field_type&quot;</span><span class="p">:</span> <span class="s2">&quot;dynamic_dropdown&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;dynamic_dropdown_options&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;data_source&quot;</span><span class="p">:</span> <span class="s2">&quot;custom&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;service_function&quot;</span><span class="p">:</span> <span class="s2">&quot;taxonomy_re_api.search_taxa&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;service_version&quot;</span><span class="p">:</span> <span class="s2">&quot;dev&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;service_params&quot;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="nt">&quot;search_text&quot;</span><span class="p">:</span> <span class="s2">&quot;prefix:{{dynamic_dropdown_input}}&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;ns&quot;</span><span class="p">:</span> <span class="s2">&quot;ncbi_taxonomy&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;limit&quot;</span><span class="p">:</span> <span class="mi">1000</span>
-      <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;query_on_empty_input&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;result_array_index&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;path_to_selection_items&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;results&quot;</span><span class="p">],</span>
-    <span class="nt">&quot;selection_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scientific_name&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;description_template&quot;</span><span class="p">:</span> <span class="s2">&quot;Tax ID {{ncbi_taxon_id}}:&amp;nbsp&lt;strong&gt;{{scientific_name}}&lt;/strong&gt;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;multiselection&quot;</span><span class="p">:</span> <span class="kc">false</span>
-   <span class="p">}</span>
- <span class="p">}</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;scientific_name&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;optional&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;advanced&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;default_values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dynamic_dropdown&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;dynamic_dropdown_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;data_source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;custom&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;service_function&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;taxonomy_re_api.search_taxa&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;service_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dev&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;service_params&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;search_text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;prefix:{{dynamic_dropdown_input}}&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ns&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ncbi_taxonomy&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;limit&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;query_on_empty_input&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;result_array_index&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;path_to_selection_items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;results&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;selection_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;scientific_name&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description_template&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Tax ID {{ncbi_taxon_id}}:&amp;nbsp&lt;strong&gt;{{scientific_name}}&lt;/strong&gt;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;multiselection&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="w"> </span><span class="p">}</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="parameter-groups-in-spec-json">
-<h2><a class="toc-backref" href="#id13">Parameter groups in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#parameter-groups-in-spec-json" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="parameter-groups-in-spec-json">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Parameter groups in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#parameter-groups-in-spec-json" title="Link to this heading"></a></h2>
 <p>Parameter groups combine a set of individually specified parameters into logical sets. This can be used for something as simple as visually grouping related input (i.e. distinguishing a set of parameters passed to a wrapped tool from kbase related parameters), but it’s most often used to allow users to specify multiple items described by a more than one parameter.</p>
 <p>It is also possible to have an optional parameter group with required parameters. If the parameter group is present, all the required parameters must be provided. The default resulting structure is a mapping (or list of mappings if <code class="docutils literal notranslate"><span class="pre">allow_multiple</span></code> is 1) with the parameter_ids as keys (e.g. <code class="docutils literal notranslate"><span class="pre">{id:</span> <span class="pre">[{parameter_id_1:</span> <span class="pre">value_1,</span> <span class="pre">parameter_id_2:</span> <span class="pre">value_2</span> <span class="pre">...}]}</span></code>) but this can be modified with the <code class="docutils literal notranslate"><span class="pre">id_mapping</span></code> option.</p>
 <dl class="field-list simple">
-<dt class="field-odd">id</dt>
+<dt class="field-odd">id<span class="colon">:</span></dt>
 <dd class="field-odd"><p>id of the parameter group. Must be unique within the method among all parameters and groups</p>
 </dd>
-<dt class="field-even">parameter_ids</dt>
+<dt class="field-even">parameter_ids<span class="colon">:</span></dt>
 <dd class="field-even"><p>IDs of parameters included in this group</p>
 </dd>
-<dt class="field-odd">ui_name</dt>
+<dt class="field-odd">ui_name<span class="colon">:</span></dt>
 <dd class="field-odd"><p>short name that is displayed to the user</p>
 </dd>
-<dt class="field-even">short_hint</dt>
+<dt class="field-even">short_hint<span class="colon">:</span></dt>
 <dd class="field-even"><p>short phrase or sentence describing the parameter group</p>
 </dd>
-<dt class="field-odd">description</dt>
+<dt class="field-odd">description<span class="colon">:</span></dt>
 <dd class="field-odd"><p>longer and more technical description of the parameter group (long-hint)</p>
 </dd>
-<dt class="field-even">allow_mutiple</dt>
+<dt class="field-even">allow_mutiple<span class="colon">:</span></dt>
 <dd class="field-even"><p>allows entry of a list instead of a single structure, default is 0. If set, the
 number of starting boxes will be either 1 or the number of elements in the
 default_values list.</p>
 </dd>
-<dt class="field-odd">optional</dt>
+<dt class="field-odd">optional<span class="colon">:</span></dt>
 <dd class="field-odd"><p>set to 1 to make the group optional, default is 0</p>
 </dd>
-<dt class="field-even">advanced</dt>
+<dt class="field-even">advanced<span class="colon">:</span></dt>
 <dd class="field-even"><p>set to 1 to make this an advanced option, default is 0. If an option is advanced, it
 should also be optional or have a default value</p>
 </dd>
-<dt class="field-odd">id_mapping</dt>
+<dt class="field-odd">id_mapping<span class="colon">:</span></dt>
 <dd class="field-odd"><p>optional mapping which connects parameter IDs (as keys) to a desired name in the
 output object (as values) (e.g. <code class="docutils literal notranslate"><span class="pre">{&quot;parameter_id&quot;:&quot;output_key&quot;}</span></code>). This provides
 similar functionality to the <code class="docutils literal notranslate"><span class="pre">kb_service_input_mapping</span></code> and
 <code class="docutils literal notranslate"><span class="pre">kb_service_output_mapping</span></code> described in the behavior section below for these nested
 objects.</p>
 </dd>
-<dt class="field-even">with_border</dt>
+<dt class="field-even">with_border<span class="colon">:</span></dt>
 <dd class="field-even"><p>set to 1 to wrap this group with border.</p>
 </dd>
 </dl>
 <p>Here is an example of a <code class="docutils literal notranslate"><span class="pre">parameter-groups</span></code> block for from the <a href="https://github.com/cshenry/fba_tools/blob/4e9001c3547388eb70da6c07229f54c4aac23af2/ui/narrative/methods/edit_media/spec.json" target="_blank">Edit Media UI</a> inside the <code class="docutils literal notranslate"><span class="pre">fba_tools</span></code> app.</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;parameter-groups&quot;</span><span class="o">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;compounds_to_change&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;parameters&quot;</span><span class="o">:</span> <span class="p">[</span>
-            <span class="s2">&quot;change_id&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;change_concentration&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;change_minflux&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;change_maxflux&quot;</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;optional&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="s2">&quot;advanced&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="s2">&quot;allow_multiple&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="s2">&quot;with_border&quot;</span><span class="o">:</span> <span class="kc">true</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;compounds_to_add&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;parameters&quot;</span><span class="o">:</span> <span class="p">[</span>
-            <span class="s2">&quot;add_id&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;add_concentration&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;add_minflux&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;add_maxflux&quot;</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;optional&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="s2">&quot;allow_multiple&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="s2">&quot;advanced&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="s2">&quot;with_border&quot;</span><span class="o">:</span> <span class="kc">true</span>
-    <span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;parameter-groups&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;compounds_to_change&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;parameters&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;change_id&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;change_concentration&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;change_minflux&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;change_maxflux&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;optional&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;advanced&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;allow_multiple&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;with_border&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;compounds_to_add&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;parameters&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;add_id&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;add_concentration&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;add_minflux&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;add_maxflux&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="s2">&quot;optional&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;allow_multiple&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;advanced&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;with_border&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="behavior-in-spec-json">
-<h2><a class="toc-backref" href="#id14">Behavior in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#behavior-in-spec-json" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="behavior-in-spec-json">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Behavior in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#behavior-in-spec-json" title="Link to this heading"></a></h2>
 <p>There are three alternative sub-blocks available inside the <code class="docutils literal notranslate"><span class="pre">behavior</span></code> block:</p>
 <dl class="field-list simple">
-<dt class="field-odd">service-mapping</dt>
+<dt class="field-odd">service-mapping<span class="colon">:</span></dt>
 <dd class="field-odd"><p>defines mapping rules for the input and output data for a typical SDK method
 (described below)</p>
 </dd>
-<dt class="field-even">none</dt>
+<dt class="field-even">none<span class="colon">:</span></dt>
 <dd class="field-even"><p>used in case the UI method is not supposed to run any service function (for instance, when
 input parameters should be passed into the widget directly) - <a href="https://github.com/kbaseapps/kb_cummerbund/blob/master/ui/narrative/methods/view_volcano_plot/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-odd">script-mapping</dt>
+<dt class="field-odd">script-mapping<span class="colon">:</span></dt>
 <dd class="field-odd"><p>support for legacy software – not recommended for use in SDK repos</p>
 </dd>
 </dl>
 <p>In most cases, the <code class="docutils literal notranslate"><span class="pre">service-mapping</span></code> sub-block should be used. Here is the list of sub-elements available inside <code class="docutils literal notranslate"><span class="pre">service-mapping</span></code>:</p>
 <dl class="field-list simple">
-<dt class="field-odd">url</dt>
+<dt class="field-odd">url<span class="colon">:</span></dt>
 <dd class="field-odd"><p>defines the URL end-point of a deployed service (for SDK repos, this parameter should be
 empty)</p>
 </dd>
-<dt class="field-even">name</dt>
+<dt class="field-even">name<span class="colon">:</span></dt>
 <dd class="field-even"><p>module name of an SDK repo registered in the catalog (refer to the module name in the KIDL
 specification)</p>
 </dd>
-<dt class="field-odd">method</dt>
+<dt class="field-odd">method<span class="colon">:</span></dt>
 <dd class="field-odd"><p>name of the service function to be called (see the funcdef in the KIDL specification)</p>
 </dd>
-<dt class="field-even">input_mapping</dt>
+<dt class="field-even">input_mapping<span class="colon">:</span></dt>
 <dd class="field-even"><p>defines rules for mapping UI parameters onto service function input arguments</p>
 </dd>
-<dt class="field-odd">output_mapping</dt>
+<dt class="field-odd">output_mapping<span class="colon">:</span></dt>
 <dd class="field-odd"><p>defines rules for mapping output results returned from service functions to input
 options of widgets that display these results</p>
 </dd>
 </dl>
 <p>Both the <code class="docutils literal notranslate"><span class="pre">input_mapping</span></code> and <code class="docutils literal notranslate"><span class="pre">output_mapping</span></code> sub-blocks are arrays of items, where each item has the following properties:</p>
 <dl class="field-list simple">
-<dt class="field-odd">input_parameter</dt>
+<dt class="field-odd">input_parameter<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ID of a UI input parameter or parameter group to be used as a source of mapping</p>
 </dd>
-<dt class="field-even">constant_value</dt>
+<dt class="field-even">constant_value<span class="colon">:</span></dt>
 <dd class="field-even"><p>constant value to be used as a source of mapping - <a href="https://github.com/kbaseapps/taxonomy_service/blob/master/ui/narrative/methods/create_taxonomy/spec.json" target="_blank">Example</a></p>
 </dd>
-<dt class="field-odd">narrative_system_variable</dt>
+<dt class="field-odd">narrative_system_variable<span class="colon">:</span></dt>
 <dd class="field-odd"><p>system variable in the narrative back-end to be used as a source of
 mapping (only the <code class="docutils literal notranslate"><span class="pre">workspace</span></code> variable is currently supported)</p>
 </dd>
-<dt class="field-even">target_property</dt>
+<dt class="field-even">target_property<span class="colon">:</span></dt>
 <dd class="field-even"><p>name of the structure field to be set as a target of mapping</p>
 </dd>
-<dt class="field-odd">target_argument_position</dt>
+<dt class="field-odd">target_argument_position<span class="colon">:</span></dt>
 <dd class="field-odd"><p>(allowed for input mapping items only, default value is 0) position of
 the input argument of a service function to be set as a target of
 mapping</p>
 </dd>
-<dt class="field-even">target_type_transform</dt>
+<dt class="field-even">target_type_transform<span class="colon">:</span></dt>
 <dd class="field-even"><p>optional rule allowing you to modify the passed value. See below for the
 list of allowed transformations.</p>
 </dd>
-<dt class="field-odd">service_method_output_path</dt>
+<dt class="field-odd">service_method_output_path<span class="colon">:</span></dt>
 <dd class="field-odd"><p>(allowed for output mapping items only) - defines the JSON-path into
 the output prepared for the widget as a place for a target value; if
 this path is an empty array, it corresponds to the root point, and all
@@ -810,88 +733,92 @@ the data returned from the service function will be captured - <a href="https://
 <p>The following is a list of allowed transformations that can be used for the
 <code class="docutils literal notranslate"><span class="pre">target_type_transform</span></code>:</p>
 <dl class="field-list simple">
-<dt class="field-odd">none</dt>
+<dt class="field-odd">none<span class="colon">:</span></dt>
 <dd class="field-odd"><p>(default value in case it is not defined) - no modification</p>
 </dd>
-<dt class="field-even">ref</dt>
+<dt class="field-even">ref<span class="colon">:</span></dt>
 <dd class="field-even"><p>changes the object name into a workspace reference by adding a prefix of the workspace name followed by <code class="docutils literal notranslate"><span class="pre">/</span></code></p>
 </dd>
-<dt class="field-odd">int</dt>
+<dt class="field-odd">int<span class="colon">:</span></dt>
 <dd class="field-odd"><p>treats a text value as an integer</p>
 </dd>
-<dt class="field-even">list&lt;inner-transformation&gt;</dt>
+<dt class="field-even">list&lt;inner-transformation&gt;<span class="colon">:</span></dt>
 <dd class="field-even"><p>tries to prepare a list of items (or just iterate over items if it’s a
 list already), applying inner-transformation to each element</p>
 </dd>
 </dl>
 <p>In a group of source properties (<code class="docutils literal notranslate"><span class="pre">input_parameter</span></code>, <code class="docutils literal notranslate"><span class="pre">constant_value</span></code>, <code class="docutils literal notranslate"><span class="pre">narrative_system_variable</span></code>), only one property can be used. For target properties, both <code class="docutils literal notranslate"><span class="pre">target_property</span></code> and <code class="docutils literal notranslate"><span class="pre">target_argument_position</span></code> can be used at the same time. This means that the service function will receive an argument with the position from <code class="docutils literal notranslate"><span class="pre">target_argument_position</span></code> and an object with property having a name from the <code class="docutils literal notranslate"><span class="pre">target_property</span></code> with target value.</p>
-<div class="section" id="example-of-mappings-in-spec-json">
-<h3><a class="toc-backref" href="#id15">Example of mappings in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#example-of-mappings-in-spec-json" title="Permalink to this headline">¶</a></h3>
+<section id="example-of-mappings-in-spec-json">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Example of mappings in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code></a><a class="headerlink" href="#example-of-mappings-in-spec-json" title="Link to this heading"></a></h3>
 <p>Let’s consider some example mappings defined in the <code class="docutils literal notranslate"><span class="pre">service-mapping</span></code> sub-block of the <code class="docutils literal notranslate"><span class="pre">behavior</span></code> section. Suppose we have a function named <code class="docutils literal notranslate"><span class="pre">func1</span></code> in the module called <code class="docutils literal notranslate"><span class="pre">module1</span></code>, where we expect to get two arguments: a string and an object with the internal field <code class="docutils literal notranslate"><span class="pre">input_prop</span></code> (such as <code class="docutils literal notranslate"><span class="pre">{&quot;input_prop&quot;:</span> <span class="pre">&quot;...&quot;}</span></code>). We also have two UI parameters of the type <code class="docutils literal notranslate"><span class="pre">text</span></code> with the IDs <code class="docutils literal notranslate"><span class="pre">param1</span></code> and <code class="docutils literal notranslate"><span class="pre">param2</span></code>. Output returned from the function is an array containing only one object which has an internal field called <code class="docutils literal notranslate"><span class="pre">output_prop</span></code>. The value of this field should be mapped to the <code class="docutils literal notranslate"><span class="pre">option1</span></code> option in the UI widget. In this case, we’ll have following mappings:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;behavior&quot;</span> <span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;service-mapping&quot;</span> <span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;url&quot;</span> <span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;module1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;method&quot;</span> <span class="o">:</span> <span class="s2">&quot;func1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;input_mapping&quot;</span> <span class="o">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;input_parameter&quot;</span><span class="o">:</span> <span class="s2">&quot;param1&quot;</span>
-            <span class="s2">&quot;target_argument_position&quot;</span><span class="o">:</span> <span class="mi">0</span>
-        <span class="p">},</span> <span class="p">{</span>
-            <span class="s2">&quot;input_parameter&quot;</span><span class="o">:</span> <span class="s2">&quot;param2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;target_argument_position&quot;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
-            <span class="s2">&quot;target_property&quot;</span><span class="o">:</span> <span class="s2">&quot;input_prop&quot;</span>
-        <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="s2">&quot;output_mapping&quot;</span> <span class="o">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;service_method_output_path&quot;</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;output_prop&quot;</span><span class="p">],</span>
-            <span class="s2">&quot;target_property&quot;</span><span class="o">:</span> <span class="s2">&quot;option1&quot;</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;behavior&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;service-mapping&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;url&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;name&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;module1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;method&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;func1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;input_mapping&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;input_parameter&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param1&quot;</span>
+<span class="w">            </span><span class="s2">&quot;target_argument_position&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">        </span><span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;input_parameter&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;param2&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;target_argument_position&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;target_property&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;input_prop&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;output_mapping&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;service_method_output_path&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;output_prop&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="s2">&quot;target_property&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;option1&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="display-text-file-display-yaml">
-<h2><a class="toc-backref" href="#id16">Display Text file (<code class="docutils literal notranslate"><span class="pre">display.yaml</span></code>)</a><a class="headerlink" href="#display-text-file-display-yaml" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="display-text-file-display-yaml">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Display Text file (<code class="docutils literal notranslate"><span class="pre">display.yaml</span></code>)</a><a class="headerlink" href="#display-text-file-display-yaml" title="Link to this heading"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">display.yaml</span></code> file controls how information is displayed in the narrative and in the app catalog.</p>
-<div class="align-center figure" id="id1">
+<figure class="align-center" id="id1">
 <img alt="../_images/View_flux_network_narr.png" src="../_images/View_flux_network_narr.png" />
-<p class="caption"><span class="caption-text">View Flux Network App in a narrative.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-<div class="align-center figure" id="id2">
+<figcaption>
+<p><span class="caption-text">View Flux Network App in a narrative.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/ViewFluxNetwork_cat.png"><img alt="../_images/ViewFluxNetwork_cat.png" src="../_images/ViewFluxNetwork_cat.png" style="width: 90%;" /></a>
-<p class="caption"><span class="caption-text">App Catalog for View Flux Network.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">App Catalog for View Flux Network.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>This file uses the YAML format with the following top-level fields:</p>
 <dl class="field-list simple">
-<dt class="field-odd">name</dt>
+<dt class="field-odd">name<span class="colon">:</span></dt>
 <dd class="field-odd"><p>name of the method listed in the UI</p>
 </dd>
-<dt class="field-even">tooltip</dt>
+<dt class="field-even">tooltip<span class="colon">:</span></dt>
 <dd class="field-even"><p>more detailed explanation of the method shown on a mouse-over event</p>
 </dd>
-<dt class="field-odd">screenshots</dt>
+<dt class="field-odd">screenshots<span class="colon">:</span></dt>
 <dd class="field-odd"><p>list of names of screenshot files from the <code class="docutils literal notranslate"><span class="pre">img</span></code> sub-folder</p>
 </dd>
-<dt class="field-even">icon</dt>
+<dt class="field-even">icon<span class="colon">:</span></dt>
 <dd class="field-even"><p>(optional) name of an icon file from the <code class="docutils literal notranslate"><span class="pre">img</span></code> sub-folder.  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/display.yaml" target="_blank">Example</a></p>
 </dd>
-<dt class="field-odd">method-suggestions</dt>
+<dt class="field-odd">method-suggestions<span class="colon">:</span></dt>
 <dd class="field-odd"><p>list of objects defining a set of other methods that are suggested to the user
 as related methods. There are two sub-elements – <code class="docutils literal notranslate"><span class="pre">related</span></code> and <code class="docutils literal notranslate"><span class="pre">next</span></code> –
 pointing to arrays of method IDs</p>
 </dd>
-<dt class="field-even">parameters</dt>
+<dt class="field-even">parameters<span class="colon">:</span></dt>
 <dd class="field-even"><p>parameter IDs (defined in <code class="docutils literal notranslate"><span class="pre">spec.json</span></code>) mapped to objects to objects that define
 textual information for these parameters (see details below)</p>
 </dd>
-<dt class="field-odd">description</dt>
+<dt class="field-odd">description<span class="colon">:</span></dt>
 <dd class="field-odd"><p>very detailed explanation of what this method does, appearing on a separate page</p>
 </dd>
-<dt class="field-even">publications</dt>
+<dt class="field-even">publications<span class="colon">:</span></dt>
 <dd class="field-even"><p>(optional) list of objects describing related publications. Each object includes two
 fields: <code class="docutils literal notranslate"><span class="pre">display-text</span></code>, containing a reference to a scientific journal; and
 <code class="docutils literal notranslate"><span class="pre">link</span></code>, which has the URL to an online resource.  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/display.yaml" target="_blank">Example</a></p>
@@ -899,70 +826,52 @@ fields: <code class="docutils literal notranslate"><span class="pre">display-tex
 </dl>
 <p>Each field in the <code class="docutils literal notranslate"><span class="pre">parameters</span></code> section can have the following properties:</p>
 <dl class="field-list simple">
-<dt class="field-odd">ui-name</dt>
+<dt class="field-odd">ui-name<span class="colon">:</span></dt>
 <dd class="field-odd"><p>name of the parameter used to show the field in the UI</p>
 </dd>
-<dt class="field-even">short-hint</dt>
+<dt class="field-even">short-hint<span class="colon">:</span></dt>
 <dd class="field-even"><p>short description shown in front of each parameter on the right side of the method
 input panel in the narrative</p>
 </dd>
-<dt class="field-odd">long</dt>
+<dt class="field-odd">long<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a more detailed explanation available by mouse-over</p>
 </dd>
-<dt class="field-even">placeholder</dt>
+<dt class="field-even">placeholder<span class="colon">:</span></dt>
 <dd class="field-even"><p>(optional) if the parameter type is textual (one of <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">textarea</span></code>, <code class="docutils literal notranslate"><span class="pre">textsubdata</span></code>), then this defines the placeholder text for the field.  <a href="https://github.com/kbaseapps/fba_tools/blob/master/ui/narrative/methods/build_metabolic_model/display.yaml" target="_blank">Example</a></p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="terminology.html" class="btn btn-neutral float-right" title="Terminology" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="KIDL_spec.html" class="btn btn-neutral float-left" title="KIDL Specification" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="KIDL_spec.html" class="btn btn-neutral float-left" title="KIDL Specification" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="terminology.html" class="btn btn-neutral float-right" title="Terminology" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

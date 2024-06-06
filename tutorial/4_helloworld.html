@@ -1,99 +1,60 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>4. Hello World Example &mdash; KBase SDK 1.2.0 documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28f99aa0" />
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6efca38a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="5. ContigFilter Example" href="5_setup.html" />
     <link rel="prev" title="3. Initialize the Module" href="3_initialize.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> KBase SDK
           
-
-          
-            
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            KBase SDK
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
               <div class="version">
                 1.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Intro</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Intro</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Concepts and Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video_tutorial.html">Video Tutorial</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="1_dependencies.html">1. Dependencies &amp; Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_install.html">2. Installation</a></li>
@@ -104,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="7_implement.html">7. Implement Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8_publish.html">8. Publish and Update</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/questions_and_answers.html">Common Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/create_a_report.html">Creating reports</a></li>
@@ -114,7 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/run_a_shell_command.html">Running shell commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/file_utils.html">Working with the file utils</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced Guides</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/workspace.html">Using Workspace Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/manual_build.html">Manually building the SDK</a></li>
@@ -123,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../howtos/dynamic_services.html">Dynamic Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howtos/update_to_py3.html">Updating a module to Python3</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References &amp; Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">References &amp; Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references/design_checklist.html">Design Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references/troubleshooting.html">Troubleshooting Guide</a></li>
@@ -135,76 +96,36 @@
 <li class="toctree-l1"><a class="reference internal" href="../references/terminology.html">Terminology</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">KBase SDK</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>4. Hello World Example</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4. </span>Hello World Example</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/kbase/kb_sdk_docs/blob/blob/master/source/tutorial/4_helloworld.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="hello-world-example">
-<h1>4. Hello World Example<a class="headerlink" href="#hello-world-example" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="hello-world-example">
+<h1><span class="section-number">4. </span>Hello World Example<a class="headerlink" href="#hello-world-example" title="Link to this heading"></a></h1>
 <p>This “Hello World” example demonstrates where various components of the SDK are located and how to run a basic test. Most of this example is optional. The <a href="../tutorial/5_setup.html">ContigFilter</a> example adds more features of the SDK.</p>
 <p>Note: if running this tutorial step-by-step then in the previous step you already declared <code class="docutils literal notranslate"><span class="pre">your_kbase_username</span></code>, <code class="docutils literal notranslate"><span class="pre">username</span></code>, and <code class="docutils literal notranslate"><span class="pre">module_name</span></code> as bash variables and initialized a repository named {username}HelloWorld. If not, then define these variables: <code class="docutils literal notranslate"><span class="pre">your_kbase_username=jane.smith</span></code> and <code class="docutils literal notranslate"><span class="pre">username=${your_kbase_username}</span></code>. You’ll also be using the bash variable <code class="docutils literal notranslate"><span class="pre">module_name</span></code> in this tutorial, but it will change depending on the different examples - first you can define it as <code class="docutils literal notranslate"><span class="pre">module_name=HelloWorld</span></code>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kb-sdk init --language python --user <span class="si">${</span><span class="nv">your_kbase_username</span><span class="si">}</span> <span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
-<span class="nb">cd</span> <span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kb-sdk<span class="w"> </span>init<span class="w"> </span>--language<span class="w"> </span>python<span class="w"> </span>--user<span class="w"> </span><span class="si">${</span><span class="nv">your_kbase_username</span><span class="si">}</span><span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
+<span class="nb">cd</span><span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}${</span><span class="nv">module_name</span><span class="si">}</span>
 make
 </pre></div>
 </div>
@@ -217,8 +138,8 @@ make
 <li><p>Add statements to the app</p></li>
 <li><p>Run a first test</p></li>
 </ol>
-<div class="section" id="module-description">
-<h2>4.1. Module Description<a class="headerlink" href="#module-description" title="Permalink to this headline">¶</a></h2>
+<section id="module-description">
+<h2><span class="section-number">4.1. </span>Module Description<a class="headerlink" href="#module-description" title="Link to this heading"></a></h2>
 <p>In the root directory of the module is the file <code class="docutils literal notranslate"><span class="pre">kbase.yml</span></code>.  Examine the file.
 It has a placeholder for information that you will eventually add to the module.
 The <code class="docutils literal notranslate"><span class="pre">module-name</span></code> and <code class="docutils literal notranslate"><span class="pre">service-language</span></code> will not change but the other items will change as
@@ -229,9 +150,9 @@ The <code class="docutils literal notranslate"><span class="pre">module-version<
 of an app, it can remain <em>0.0.1</em>.
 The <code class="docutils literal notranslate"><span class="pre">owners</span></code> is a list of users that can approve updates to a module.
 The information in this file shows up in the  <a href="https://narrative.kbase.us/#catalog/modules" target="_blank">Module Catalog </a> entry for the module. A more complete example is  <a href="https://narrative.kbase.us/#catalog/modules/kb_SPAdes" target="_blank">kb_SPAdes</a>.</p>
-</div>
-<div class="section" id="edit-the-narrative-ui-optional">
-<h2>4.2. Edit the Narrative UI (optional)<a class="headerlink" href="#edit-the-narrative-ui-optional" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="edit-the-narrative-ui-optional">
+<h2><span class="section-number">4.2. </span>Edit the Narrative UI (optional)<a class="headerlink" href="#edit-the-narrative-ui-optional" title="Link to this heading"></a></h2>
 <p>The specifications for the app’s Narrative user interface are under the directory named
 <code class="docutils literal notranslate"><span class="pre">ui/narrative/methods/run_{username}HelloWorld</span></code>. Note that the name of the directory is the same as
 the name of the function in the spec file above. Functions that become user-facing apps need a
@@ -243,19 +164,19 @@ information on the purpose of the subdirectory <code class="docutils literal not
 defines a mapping between the KBase Interface Description Language (KIDL) <code class="docutils literal notranslate"><span class="pre">{username}HelloWorld.spec</span></code> file and how our parameters will show up in the app’s user interface.</p>
 <p>In the section <code class="docutils literal notranslate"><span class="pre">parameters</span></code> already defines <code class="docutils literal notranslate"><span class="pre">parameter_1</span></code>:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;parameter_1&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;optional&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;advanced&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&quot;default_values&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;&quot;</span> <span class="p">],</span>
-            <span class="nt">&quot;field_type&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;text_options&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;valid_ws_types&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="p">]</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
+<span class="w">    </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;parameter_1&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;optional&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;advanced&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;allow_multiple&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;default_values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;field_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;text_options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;valid_ws_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">]</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -276,9 +197,9 @@ After validation, now we can start to work on the functionality of the app.</p>
 the <a href="../references/UI_spec.html">UI specification guide </a>.  You can also experiment with UI generation
 with the <a href="https://narrative.kbase.us/narrative/ws.28370.obj.1" target="_blank">App Spec Editor Narrative </a> (pending narrative permissions).</p>
 </div>
-</div>
-<div class="section" id="code-implementation">
-<h2>4.3. Code Implementation<a class="headerlink" href="#code-implementation" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="code-implementation">
+<h2><span class="section-number">4.3. </span>Code Implementation<a class="headerlink" href="#code-implementation" title="Link to this heading"></a></h2>
 <p>The actual code for your app will live in the Python package under <code class="docutils literal notranslate"><span class="pre">lib/{username}HelloWorld</span></code>.
 The entry point, where your code is initially called, lives in the file: <code class="docutils literal notranslate"><span class="pre">lib/{username}HelloWorld/{username}HelloWorldImpl.py</span></code>.
 It is sometimes called the “Implementation” file or simply the “Impl” file.  This is the file where you edit your own Python code.</p>
@@ -304,9 +225,9 @@ and they are part of the class inside <code class="docutils literal notranslate"
 <p class="admonition-title">Warning</p>
 <p>Don’t put any spaces between the ‘#’ and ‘BEGIN’ or ‘END’. It has bad consequences.</p>
 </div>
-</div>
-<div class="section" id="check-inputs-optional">
-<h2>4.4. Check Inputs (optional)<a class="headerlink" href="#check-inputs-optional" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="check-inputs-optional">
+<h2><span class="section-number">4.4. </span>Check Inputs (optional)<a class="headerlink" href="#check-inputs-optional" title="Link to this heading"></a></h2>
 <p>Open <code class="docutils literal notranslate"><span class="pre">{username}HelloWorldImpl.py</span></code> and find the <code class="docutils literal notranslate"><span class="pre">run_{username}HelloWorld</span></code> method, which should have some auto-generated boilerplate code and docstrings.</p>
 <p>You want to limit your code edits to regions between the comments <code class="docutils literal notranslate"><span class="pre">#BEGIN</span> <span class="pre">run_{username}HelloWorld</span></code>
 and <code class="docutils literal notranslate"><span class="pre">#END</span> <span class="pre">run_{username}HelloWorld</span></code>.
@@ -315,7 +236,7 @@ correctly. If you run <code class="docutils literal notranslate"><span class="pr
 but will not change the code you put between the sets of <code class="docutils literal notranslate"><span class="pre">#BEGIN</span></code> and <code class="docutils literal notranslate"><span class="pre">#END</span></code> comments.</p>
 <p>Between the comments, add a simple print statement, such as: <code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">(&quot;Input</span> <span class="pre">parameter&quot;,params['parameter_1'])</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#BEGIN run_{username}HelloWorld</span>
-<span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Input parameter&quot;</span><span class="p">,</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;parameter_1&#39;</span><span class="p">])</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Input parameter&quot;</span><span class="p">,</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;parameter_1&#39;</span><span class="p">])</span>
 <span class="n">report</span> <span class="o">=</span> <span class="n">KBaseReport</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">callback_url</span><span class="p">)</span>
 <span class="n">report_info</span> <span class="o">=</span> <span class="n">report</span><span class="o">.</span><span class="n">create</span><span class="p">({</span><span class="s1">&#39;report&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;objects_created&#39;</span><span class="p">:[],</span>
                                         <span class="s1">&#39;text_message&#39;</span><span class="p">:</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;parameter_1&#39;</span><span class="p">]},</span>
@@ -328,9 +249,9 @@ but will not change the code you put between the sets of <code class="docutils l
 </pre></div>
 </div>
 <p>Don’t try to change the docstring, or anything else outside the <code class="docutils literal notranslate"><span class="pre">#BEGIN</span> <span class="pre">run_{username}HelloWorld</span></code> and <code class="docutils literal notranslate"><span class="pre">#END</span> <span class="pre">run_{username}HelloWorld</span></code> comments, as your change will get overwritten by the <code class="docutils literal notranslate"><span class="pre">make</span></code> command.</p>
-</div>
-<div class="section" id="run-first-test">
-<h2>4.5. Run First Test<a class="headerlink" href="#run-first-test" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="run-first-test">
+<h2><span class="section-number">4.5. </span>Run First Test<a class="headerlink" href="#run-first-test" title="Link to this heading"></a></h2>
 <p>As a default, your <code class="docutils literal notranslate"><span class="pre">{username}HelloWorldImpl.py</span></code> file is tested using <code class="docutils literal notranslate"><span class="pre">test/{username}HelloWorld_server_test.py</span></code>. This file has some auto-generated boilerplate code.  Python will automatically run all methods that start with the name <code class="docutils literal notranslate"><span class="pre">test</span></code>.</p>
 <p>Near the bottom of the test file, find the method <code class="docutils literal notranslate"><span class="pre">test_your_method</span></code>.
 The default test is to call <code class="docutils literal notranslate"><span class="pre">run_{username}HelloWorld</span></code> with
@@ -338,7 +259,7 @@ a <code class="docutils literal notranslate"><span class="pre">workspace_name</s
 If you added the optional parameters in the
 earlier steps, you can modify the test method to test the returned output.</p>
 <p>Add a simple print statement to the end of the test method:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span> <span class="p">(</span><span class="s2">&quot;report_name&quot;</span><span class="p">,</span> <span class="n">ret</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;report_name&#39;</span><span class="p">])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;report_name&quot;</span><span class="p">,</span> <span class="n">ret</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;report_name&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -355,56 +276,38 @@ report_name report_675e061a-2fce-47aa-ac85-67e3ec975776
 <p>When running an app, the messages created by the Impl file and the test will show up in the log.
 For this module, setting up the docker container will take the most time and generate the most lines in the log.
 The next example includes a report builder that is used by the Narrative User Interface.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="5_setup.html" class="btn btn-neutral float-right" title="5. ContigFilter Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="3_initialize.html" class="btn btn-neutral float-left" title="3. Initialize the Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="3_initialize.html" class="btn btn-neutral float-left" title="3. Initialize the Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="5_setup.html" class="btn btn-neutral float-right" title="5. ContigFilter Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, KBase
-
-    </p>
+    <p>&#169; Copyright 2018, KBase.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
