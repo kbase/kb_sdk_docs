@@ -176,7 +176,7 @@ This error occurs when host user IDs (UIDs) do not match the container’s UIDs.
 Please clear out the cache with the command :code:`rm -rf ~/.kbsdk.cache` and try again. Otherwise try the following:
 
 Solution: Modify the UID in the test scripts
-"""""""""
+""""""""""""""""""""""""""""""""""""""""""""
 
 1. Modify the following scripts in the `test_local` directory:
 
@@ -202,20 +202,21 @@ Error: :code:`Can't find image [test/<your_module_name>:latest]`
 
 This error indicates that Docker is either not running or not reachable, which prevents Docker commands from executing properly.
 
-Solution: Fix Docker Daemo Socket Permissions
-"""""""""
+Solution: Fix Docker Daemon Socket Permissions
+""""""""""""""""""""""""""""""""""""""""""""""
 
 1. Ensure that the Docker daemon is running on your host.
 
-2. Modify the permissions of the Docker socket to allow group write access, which should resolve connection issues :code:`docker run -it -v /var/run/docker.sock:/var/run/docker.sock alpine chmod g+w /var/run/docker.sock`
+2. Modify the permissions of the Docker socket to allow group write access, which should resolve connection issues
+:code:`docker run -it -v /var/run/docker.sock:/var/run/docker.sock alpine chmod g+w /var/run/docker.sock`
 
 3. Clear your `kb_sdk` cache with the command :code:`rm -rf ~/.kbsdk.cache` and try running your `kb-sdk` command again.
 
 Error: :code:`Error response from daemon: client version 1.23 is too old. Minimum supported API version is 1.24, please upgrade your client to a newer version`
------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Solution: Downgrade to a supported Docker Desktop version
-"""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 1. :code:`kb-sdk` is not supported on new Docker Desktop versions. If you encounter this error, downgrade your Docker Desktop to version 4.2.4 or lower.
 2. Alternatively, you can use other Docker tools like |rancherDesktop_link|, |podman_link|, or |colima_link|.
