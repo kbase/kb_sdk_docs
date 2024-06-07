@@ -51,14 +51,14 @@ Having trouble getting Docker working on Mac
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It may be that your Docker installation may be incorrect, out of date,
-or the daemon may not have been started. Please see |dockerMac_link| 
+or the daemon may not have been started. Please see |dockerMac_link|
 
 
 Having trouble getting Docker working on Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It may be that your Docker installation may be incorrect, out of date,
-or the daemon may not have been started. Please see |dockerLinux_link| 
+or the daemon may not have been started. Please see |dockerLinux_link|
 
 
 Getting Java-related errors trying to run kb-sdk
@@ -107,7 +107,7 @@ If you get an error on OSX as follows:
 
 Reinstall the latest version of the KBase SDK
 
-* Follow instructions at https://kbase.github.io/kb_sdk_docs/tutorial/2_install.html 
+* Follow instructions at https://kbase.github.io/kb_sdk_docs/tutorial/2_install.html
 * Don't forget to generate the new `kb-sdk` executable
 
 
@@ -167,21 +167,58 @@ can increase the amount of memory available to the containers.
 
     Advanced preferences in Docker for OS X.
 
-Error Messages
-^^^^^^^^^^^^^^
-*Error*: ``KeyError: 'getpwuid()' uid not found: '``
+Error Messages and Solutions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Solution*: Try changing the user flag in ``run_tests.sh``, ``run_bash.sh``, and ``run_subjobs.sh`` (if available) in the ``test_local`` directory to ``--user 0``. Alternatively, remove that flag altogether.
+Error: :code:`KeyError: 'getpwuid()' uid not found`
+----------------------------------------------
+This error occurs when host user IDs (UIDs) do not match the container’s UIDs. The user ID is stored in your :code:`~/.kbsdk.cache`.
+Please clear out the cache with the command :code:`rm -rf ~/.kbsdk.cache` and try again. Otherwise try the following:
 
-*Error*: ``Can't find image [test/<your_module_name>:latest].`` 
-``Here is 'docker images' output: Cannot connect to the Docker daemon.``
-``Is the docker daemon running on this host?``
+Solution: Modify the UID in the test scripts
+"""""""""
 
-*Solution*: Run the following code snippet `docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock`
+1. Modify the following scripts in the `test_local` directory:
+
+- `run_tests.sh`
+- `run_bash.sh`
+- `run_subjobs.sh`
+
+2. Change the user flag to :code:`--user 0` to run as root, which should bypass the UID issues:
+
+- Example, change :code:`./run_tests.sh --user $(id -u)` to :code:`./run_tests.sh --user 0`.
+
+3. If the problem persists, consider removing the :code:`--user` flag altogether.
 
 
+Error: :code:`Can't find image [test/<your_module_name>:latest]`
+-----------------------------------------------------------------
 
+.. code-block:: bash
 
+    Error: "Can't find image [test/<your_module_name>:latest]
+    Here is 'docker images' output: Cannot connect to the Docker daemon.
+    Is the docker daemon running on this host?
+
+This error indicates that Docker is either not running or not reachable, which prevents Docker commands from executing properly.
+
+Solution: Fix Docker Daemo Socket Permissions
+"""""""""
+
+1. Ensure that the Docker daemon is running on your host.
+
+2. Modify the permissions of the Docker socket to allow group write access, which should resolve connection issues :code:`docker run -it -v /var/run/docker.sock:/var/run/docker.sock alpine chmod g+w /var/run/docker.sock`
+
+3. Clear your `kb_sdk` cache with the command :code:`rm -rf ~/.kbsdk.cache` and try running your `kb-sdk` command again.
+
+Error: :code:`Error response from daemon: client version 1.23 is too old. Minimum supported API version is 1.24, please upgrade your client to a newer version`
+-----------------------------------------------------------------
+
+Solution: Don't use docker desktop > 1.2.3
+"""""""""
+
+1. :code:`kb-sdk` is not supported on new Docker Desktop versions. If you encounter this error, downgrade your Docker Desktop to version 4.2.4 or lower.
+2. Alternatively, you can use other docker tools like Rancher Desktop, Podman, or Colima
 
 
 .. External links
