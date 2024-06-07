@@ -13,7 +13,7 @@ You can download the Workspace client by running the following inside an SDK mod
 Retrieving workspace object metadata
 ---------------------------------------
 
-If you don't want to retrieve the entire object, and just want information about it, the most efficient way is to use the ``ws.get_object_info`` function. To read more about the available functions, see the  |Workspace_link|.
+If you don't want to retrieve the entire object, and just want information about it, the most efficient way is to use the ``ws.get_object_info3`` function. To read more about the available functions, see the  |Workspace_link|.
 
 *Initialize the workspace client and get an object's information by reference*
 
@@ -26,7 +26,8 @@ If you don't want to retrieve the entire object, and just want information about
     self.ws = Workspace(self.ws_url, token=self.token)
     obj_ref = "your/object/reference"
     object_info = self.ws.get_object_info([{"ref": obj_ref}])[0]
-    object_type = object_info[2] #this could be KBaseGenomes.Genome-8.3
+    object_type_full = object_info[2] # This could be KBaseGenomes.Genome-8.3
+    object_type = object_type_full.split('-')[0] # This would be KBaseGenomes.Genome
 
 
 How to use the Workspace Client in the narrative
