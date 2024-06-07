@@ -228,15 +228,15 @@ Solution: Downgrade to a supported Docker Desktop version
 
 .. |dependencies_link| raw:: html
 
-   <a href="https://github.com/kbase/kb_sdk/blob/master/doc/test_dependencies.md" target="_blank">Test Dependencies</a>
+   <a href="https://github.com/kbase/kb_sdk/blob/master/doc/test_dependencies.md" target="_blank">https://github.com/kbase/kb_sdk/blob/master/doc/test_dependencies.md</a>
 
 .. |dockerMac_link| raw:: html
 
-   <a href="https://docs.docker.com/mac/" target="_blank">Docker for Mac</a>
+   <a href="https://docs.docker.com/mac/" target="_blank">https://docs.docker.com/mac/</a>
 
 .. |dockerLinux_link| raw:: html
 
-   <a href="https://docs.docker.com/linux/" target="_blank">Docker for Linux</a>
+   <a href="https://docs.docker.com/linux/" target="_blank">https://docs.docker.com/linux/</a>
 
 .. |rancherDesktop_link| raw:: html
 
