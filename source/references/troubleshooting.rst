@@ -214,12 +214,11 @@ Solution: Fix Docker Daemo Socket Permissions
 Error: :code:`Error response from daemon: client version 1.23 is too old. Minimum supported API version is 1.24, please upgrade your client to a newer version`
 -----------------------------------------------------------------
 
-Solution: Don't use docker desktop > 1.2.3
+Solution: Downgrade to a supported Docker Desktop version
 """""""""
 
 1. :code:`kb-sdk` is not supported on new Docker Desktop versions. If you encounter this error, downgrade your Docker Desktop to version 4.2.4 or lower.
-2. Alternatively, you can use other docker tools like Rancher Desktop, Podman, or Colima
-
+2. Alternatively, you can use other Docker tools like |rancherDesktop_link|, |podman_link|, or |colima_link|.
 
 .. External links
 
@@ -227,25 +226,32 @@ Solution: Don't use docker desktop > 1.2.3
 
    <a href="../howtos/create_a_report.html" target="_blank">Creating a report </a>
 
- https://github.com/kbase/kb\_sdk/blob/master/doc/kb\_sdk\_dependencies.md
-
 .. |dependencies_link| raw:: html
 
-   <a href="https://github.com/kbase/kb_sdk/blob/master/doc/test_dependencies.md" target="_blank">https://github.com/kbase/kb_sdk/blob/master/doc/test_dependencies.md</a>
-
+   <a href="https://github.com/kbase/kb_sdk/blob/master/doc/test_dependencies.md" target="_blank">Test Dependencies</a>
 
 .. |dockerMac_link| raw:: html
 
-   <a href="https://docs.docker.com/mac/" target="_blank">https://docs.docker.com/mac/</a>
+   <a href="https://docs.docker.com/mac/" target="_blank">Docker for Mac</a>
 
 .. |dockerLinux_link| raw:: html
 
-   <a href="https://docs.docker.com/mac/" target="_blank">https://docs.docker.com/linux/</a>
+   <a href="https://docs.docker.com/linux/" target="_blank">Docker for Linux</a>
+
+.. |rancherDesktop_link| raw:: html
+
+   <a href="https://rancherdesktop.io/" target="_blank">Rancher Desktop</a>
+
+.. |podman_link| raw:: html
+
+   <a href="https://podman.io/" target="_blank">Podman</a>
+
+.. |colima_link| raw:: html
+
+   <a href="https://github.com/abiosoft/colima" target="_blank">Colima</a>
 
 .. Internal links
 
 .. |installSDK_link| raw:: html
 
    <a href="../tutorial/install.html">Install SDK Dependencies - Docker </a>
-
-
