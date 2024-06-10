@@ -25,7 +25,7 @@ If you don't want to retrieve the entire object, and just want information about
     self.token = config["KB_AUTH_TOKEN"]
     self.ws = Workspace(self.ws_url, token=self.token)
     obj_ref = "your/object/reference"
-    object_info = self.ws.get_object_info([{"ref": obj_ref}])[0]
+    object_info = self.ws.get_object_info3([{"ref": obj_ref}])[0]
     object_type_full = object_info[2] # This could be KBaseGenomes.Genome-8.3
     object_type = object_type_full.split('-')[0] # This would be KBaseGenomes.Genome
 
