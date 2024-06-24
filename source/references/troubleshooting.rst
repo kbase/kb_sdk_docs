@@ -213,7 +213,7 @@ Solution: Fix Docker Daemon Socket Permissions
 3. Clear your `kb_sdk` cache with the command :code:`rm -rf ~/.kbsdk.cache` and try running your `kb-sdk` command again.
 
 Error: client version 1.23 is too old.
-""""""""""""""""""""""""""""""""""""""
+--------------------------------------
 
 .. code-block:: bash
 
