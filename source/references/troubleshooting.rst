@@ -224,7 +224,7 @@ Error: client version 1.23 is too old.
 Solution: Downgrade to a supported Docker Desktop version
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-1. :code:`kb-sdk` is not supported on new Docker Desktop versions. If you encounter this error, downgrade your Docker Desktop to version 4.2.4 or lower.
+1. :code:`kb-sdk` is not supported on new Docker Desktop versions. If you encounter this error, downgrade your Docker Desktop to version 4.24.0 or lower.
 2. Alternatively, you can use other Docker tools like |rancherDesktop_link|, |podman_link|, or |colima_link|.
 
 .. External links
