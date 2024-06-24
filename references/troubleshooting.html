@@ -137,7 +137,25 @@
 <li><p><a class="reference internal" href="#unable-to-find-valid-certification" id="id10">Unable to find valid certification</a></p></li>
 <li><p><a class="reference internal" href="#my-docker-instances-have-run-out-of-space" id="id11">My Docker instances have run out of space</a></p></li>
 <li><p><a class="reference internal" href="#my-docker-container-ran-out-of-memory" id="id12">My Docker container ran out of memory</a></p></li>
-<li><p><a class="reference internal" href="#error-messages" id="id13">Error Messages</a></p></li>
+<li><p><a class="reference internal" href="#error-messages-and-solutions" id="id13">Error Messages and Solutions</a></p>
+<ul>
+<li><p><a class="reference internal" href="#error-keyerror-getpwuid-uid-not-found" id="id14">Error: <code class="code docutils literal notranslate"><span class="pre">KeyError:</span> <span class="pre">'getpwuid()'</span> <span class="pre">uid</span> <span class="pre">not</span> <span class="pre">found</span></code></a></p>
+<ul>
+<li><p><a class="reference internal" href="#solution-modify-the-uid-in-the-test-scripts" id="id15">Solution: Modify the UID in the test scripts</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#error-can-t-find-image-test-your-module-name-latest" id="id16">Error: <code class="code docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">image</span> <span class="pre">[test/&lt;your_module_name&gt;:latest]</span></code></a></p>
+<ul>
+<li><p><a class="reference internal" href="#solution-fix-docker-daemon-socket-permissions" id="id17">Solution: Fix Docker Daemon Socket Permissions</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#error-client-version-1-23-is-too-old" id="id18">Error: client version 1.23 is too old.</a></p>
+<ul>
+<li><p><a class="reference internal" href="#solution-downgrade-to-a-supported-docker-desktop-version" id="id19">Solution: Downgrade to a supported Docker Desktop version</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -185,7 +203,7 @@ or the daemon may not have been started. Please see <a href="https://docs.docker
 <section id="having-trouble-getting-docker-working-on-linux">
 <h2><a class="toc-backref" href="#id6" role="doc-backlink">Having trouble getting Docker working on Linux</a><a class="headerlink" href="#having-trouble-getting-docker-working-on-linux" title="Link to this heading"></a></h2>
 <p>It may be that your Docker installation may be incorrect, out of date,
-or the daemon may not have been started. Please see <a href="https://docs.docker.com/mac/" target="_blank">https://docs.docker.com/linux/</a></p>
+or the daemon may not have been started. Please see <a href="https://docs.docker.com/linux/" target="_blank">https://docs.docker.com/linux/</a></p>
 </section>
 <section id="getting-java-related-errors-trying-to-run-kb-sdk">
 <h2><a class="toc-backref" href="#id7" role="doc-backlink">Getting Java-related errors trying to run kb-sdk</a><a class="headerlink" href="#getting-java-related-errors-trying-to-run-kb-sdk" title="Link to this heading"></a></h2>
@@ -199,9 +217,7 @@ setenv JAVA_HOME `/usr/libexec/java_home`
 </section>
 <section id="my-report-isn-t-generating-output-correctly">
 <h2><a class="toc-backref" href="#id8" role="doc-backlink">My report isn’t generating output correctly</a><a class="headerlink" href="#my-report-isn-t-generating-output-correctly" title="Link to this heading"></a></h2>
-<p>See the guide on   <a href="../howtos/create_a_report.html" target="_blank">Creating a report </a>
-
-https://github.com/kbase/kb\_sdk/blob/master/doc/kb\_sdk\_dependencies.md.</p>
+<p>See the guide on <a href="../howtos/create_a_report.html" target="_blank">Creating a report </a>.</p>
 </section>
 <section id="getting-servererror-jsonrpcerror">
 <h2><a class="toc-backref" href="#id9" role="doc-backlink">Getting “ServerError: JSONRPCError”</a><a class="headerlink" href="#getting-servererror-jsonrpcerror" title="Link to this heading"></a></h2>
@@ -268,14 +284,67 @@ can increase the amount of memory available to the containers.</p>
 </figcaption>
 </figure>
 </section>
-<section id="error-messages">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Error Messages</a><a class="headerlink" href="#error-messages" title="Link to this heading"></a></h2>
-<p><em>Error</em>: <code class="docutils literal notranslate"><span class="pre">KeyError:</span> <span class="pre">'getpwuid()'</span> <span class="pre">uid</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">'</span></code></p>
-<p><em>Solution</em>: Try changing the user flag in <code class="docutils literal notranslate"><span class="pre">run_tests.sh</span></code>, <code class="docutils literal notranslate"><span class="pre">run_bash.sh</span></code>, and <code class="docutils literal notranslate"><span class="pre">run_subjobs.sh</span></code> (if available) in the <code class="docutils literal notranslate"><span class="pre">test_local</span></code> directory to <code class="docutils literal notranslate"><span class="pre">--user</span> <span class="pre">0</span></code>. Alternatively, remove that flag altogether.</p>
-<p><em>Error</em>: <code class="docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">image</span> <span class="pre">[test/&lt;your_module_name&gt;:latest].</span></code>
-<code class="docutils literal notranslate"><span class="pre">Here</span> <span class="pre">is</span> <span class="pre">'docker</span> <span class="pre">images'</span> <span class="pre">output:</span> <span class="pre">Cannot</span> <span class="pre">connect</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">Docker</span> <span class="pre">daemon.</span></code>
-<code class="docutils literal notranslate"><span class="pre">Is</span> <span class="pre">the</span> <span class="pre">docker</span> <span class="pre">daemon</span> <span class="pre">running</span> <span class="pre">on</span> <span class="pre">this</span> <span class="pre">host?</span></code></p>
-<p><em>Solution</em>: Run the following code snippet <cite>docker run -it -v /var/run/docker.sock:/run/docker.sock alpine chmod g+w /run/docker.sock</cite></p>
+<section id="error-messages-and-solutions">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Error Messages and Solutions</a><a class="headerlink" href="#error-messages-and-solutions" title="Link to this heading"></a></h2>
+<section id="error-keyerror-getpwuid-uid-not-found">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Error: <code class="code docutils literal notranslate"><span class="pre">KeyError:</span> <span class="pre">'getpwuid()'</span> <span class="pre">uid</span> <span class="pre">not</span> <span class="pre">found</span></code></a><a class="headerlink" href="#error-keyerror-getpwuid-uid-not-found" title="Link to this heading"></a></h3>
+<p>This error occurs when host user IDs (UIDs) do not match the container’s UIDs. The user ID is stored in your <code class="code docutils literal notranslate"><span class="pre">~/.kbsdk.cache</span></code>.
+Please clear out the cache with the command <code class="code docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">~/.kbsdk.cache</span></code> and try again. Otherwise try the following:</p>
+<section id="solution-modify-the-uid-in-the-test-scripts">
+<h4><a class="toc-backref" href="#id15" role="doc-backlink">Solution: Modify the UID in the test scripts</a><a class="headerlink" href="#solution-modify-the-uid-in-the-test-scripts" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Modify the following scripts in the <cite>test_local</cite> directory:</p></li>
+</ol>
+<ul class="simple">
+<li><p><cite>run_tests.sh</cite></p></li>
+<li><p><cite>run_bash.sh</cite></p></li>
+<li><p><cite>run_subjobs.sh</cite></p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Change the user flag to <code class="code docutils literal notranslate"><span class="pre">--user</span> <span class="pre">0</span></code> to run as root, which should bypass the UID issues:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Example, change <code class="code docutils literal notranslate"><span class="pre">./run_tests.sh</span> <span class="pre">--user</span> <span class="pre">$(id</span> <span class="pre">-u)</span></code> to <code class="code docutils literal notranslate"><span class="pre">./run_tests.sh</span> <span class="pre">--user</span> <span class="pre">0</span></code>.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>If the problem persists, consider removing the <code class="code docutils literal notranslate"><span class="pre">--user</span></code> flag altogether.</p></li>
+</ol>
+</section>
+</section>
+<section id="error-can-t-find-image-test-your-module-name-latest">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Error: <code class="code docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">image</span> <span class="pre">[test/&lt;your_module_name&gt;:latest]</span></code></a><a class="headerlink" href="#error-can-t-find-image-test-your-module-name-latest" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Error:<span class="w"> </span><span class="s2">&quot;Can&#39;t find image [test/&lt;your_module_name&gt;:latest]</span>
+<span class="s2">Here is &#39;docker images&#39; output: Cannot connect to the Docker daemon.</span>
+<span class="s2">Is the docker daemon running on this host?</span>
+</pre></div>
+</div>
+<p>This error indicates that Docker is either not running or not reachable, which prevents Docker commands from executing properly.</p>
+<section id="solution-fix-docker-daemon-socket-permissions">
+<h4><a class="toc-backref" href="#id17" role="doc-backlink">Solution: Fix Docker Daemon Socket Permissions</a><a class="headerlink" href="#solution-fix-docker-daemon-socket-permissions" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Ensure that the Docker daemon is running on your host.</p></li>
+</ol>
+<p>2. Modify the permissions of the Docker socket to allow group write access, which should resolve connection issues
+<code class="code docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">-v</span> <span class="pre">/var/run/docker.sock:/var/run/docker.sock</span> <span class="pre">alpine</span> <span class="pre">chmod</span> <span class="pre">g+w</span> <span class="pre">/var/run/docker.sock</span></code></p>
+<ol class="arabic simple" start="3">
+<li><p>Clear your <cite>kb_sdk</cite> cache with the command <code class="code docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">~/.kbsdk.cache</span></code> and try running your <cite>kb-sdk</cite> command again.</p></li>
+</ol>
+</section>
+</section>
+<section id="error-client-version-1-23-is-too-old">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Error: client version 1.23 is too old.</a><a class="headerlink" href="#error-client-version-1-23-is-too-old" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Error<span class="w"> </span>response<span class="w"> </span>from<span class="w"> </span>daemon:<span class="w"> </span>client<span class="w"> </span>version<span class="w"> </span><span class="m">1</span>.23<span class="w"> </span>is<span class="w"> </span>too<span class="w"> </span>old.
+Minimum<span class="w"> </span>supported<span class="w"> </span>API<span class="w"> </span>version<span class="w"> </span>is<span class="w"> </span><span class="m">1</span>.24,<span class="w"> </span>please<span class="w"> </span>upgrade<span class="w"> </span>your<span class="w"> </span>client<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>newer<span class="w"> </span>version
+</pre></div>
+</div>
+<section id="solution-downgrade-to-a-supported-docker-desktop-version">
+<h4><a class="toc-backref" href="#id19" role="doc-backlink">Solution: Downgrade to a supported Docker Desktop version</a><a class="headerlink" href="#solution-downgrade-to-a-supported-docker-desktop-version" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">kb-sdk</span></code> is not supported on new Docker Desktop versions. If you encounter this error, downgrade your Docker Desktop to version 4.24.0 or lower.</p></li>
+<li><p>Alternatively, you can use other Docker tools like <a href="https://rancherdesktop.io/" target="_blank">Rancher Desktop</a>, <a href="https://podman.io/" target="_blank">Podman</a>, or <a href="https://github.com/abiosoft/colima" target="_blank">Colima</a>.</p></li>
+</ol>
+</section>
+</section>
 </section>
 </section>
 

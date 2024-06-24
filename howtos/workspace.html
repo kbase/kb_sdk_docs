@@ -132,7 +132,7 @@
 </div></blockquote>
 <section id="retrieving-workspace-object-metadata">
 <h2>Retrieving workspace object metadata<a class="headerlink" href="#retrieving-workspace-object-metadata" title="Link to this heading"></a></h2>
-<p>If you don’t want to retrieve the entire object, and just want information about it, the most efficient way is to use the <code class="docutils literal notranslate"><span class="pre">ws.get_object_info</span></code> function. To read more about the available functions, see the  <a href="https://kbase.us/services/ws/docs/Workspace.html" target="_blank">workspace spec file </a>.</p>
+<p>If you don’t want to retrieve the entire object, and just want information about it, the most efficient way is to use the <code class="docutils literal notranslate"><span class="pre">ws.get_object_info3</span></code> function. To read more about the available functions, see the  <a href="https://kbase.us/services/ws/docs/Workspace.html" target="_blank">workspace spec file </a>.</p>
 <p><em>Initialize the workspace client and get an object’s information by reference</em></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># The config object is passed into the __init__ function for your *Impl.py module</span>
 <span class="kn">from</span> <span class="nn">Workspace.WorkspaceClient</span> <span class="kn">import</span> <span class="n">Workspace</span> <span class="k">as</span> <span class="n">Workspace</span>
@@ -140,8 +140,9 @@
 <span class="bp">self</span><span class="o">.</span><span class="n">token</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;KB_AUTH_TOKEN&quot;</span><span class="p">]</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">ws</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ws_url</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">token</span><span class="p">)</span>
 <span class="n">obj_ref</span> <span class="o">=</span> <span class="s2">&quot;your/object/reference&quot;</span>
-<span class="n">object_info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ws</span><span class="o">.</span><span class="n">get_object_info</span><span class="p">([{</span><span class="s2">&quot;ref&quot;</span><span class="p">:</span> <span class="n">obj_ref</span><span class="p">}])[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">object_type</span> <span class="o">=</span> <span class="n">object_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c1">#this could be KBaseGenomes.Genome-8.3</span>
+<span class="n">object_info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ws</span><span class="o">.</span><span class="n">get_object_info3</span><span class="p">([{</span><span class="s2">&quot;ref&quot;</span><span class="p">:</span> <span class="n">obj_ref</span><span class="p">}])[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">object_type_full</span> <span class="o">=</span> <span class="n">object_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># This could be KBaseGenomes.Genome-8.3</span>
+<span class="n">object_type</span> <span class="o">=</span> <span class="n">object_type_full</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># This would be KBaseGenomes.Genome</span>
 </pre></div>
 </div>
 </section>
